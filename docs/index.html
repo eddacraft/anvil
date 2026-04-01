@@ -15,18 +15,43 @@
       line-height: 1.6;
     }
     h1 { color: #fff; font-size: 1.5rem; }
-    code {
+    .cmd-block {
+      position: relative;
       background: #1a1a1a;
-      padding: 0.75rem 1rem;
-      display: block;
       border-radius: 4px;
+      border: 1px solid #333;
+      overflow: hidden;
+    }
+    .cmd-block code {
+      display: block;
+      padding: 0.75rem 3rem 0.75rem 1rem;
       overflow-x: auto;
       font-size: 0.9rem;
-      border: 1px solid #333;
+      font-family: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+      white-space: nowrap;
     }
+    .copy-btn {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      background: #333;
+      border: 1px solid #444;
+      border-radius: 4px;
+      color: #aaa;
+      cursor: pointer;
+      padding: 0.25rem 0.4rem;
+      font-size: 0.8rem;
+      line-height: 1;
+      transition: background 0.15s, color 0.15s;
+    }
+    .copy-btn:hover { background: #444; color: #fff; }
+    .copy-btn.copied { background: #2a5a2a; color: #7fff7f; border-color: #3a7a3a; }
+    .copy-btn .icon-check { display: none; }
+    .copy-btn.copied .icon-copy { display: none; }
+    .copy-btn.copied .icon-check { display: inline; }
     a { color: #7c9aff; }
     .section { margin: 2rem 0; }
-    .label { color: #888; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .label { color: #888; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
   </style>
 </head>
 <body>
@@ -35,16 +60,40 @@
 
   <div class="section">
     <p class="label">Linux / macOS</p>
-    <code>curl --proto '=https' --tlsv1.2 -LsSf https://github.com/EddaCraft/anvil/releases/latest/download/anvil-cli-installer.sh | sh</code>
+    <div class="cmd-block">
+      <code id="cmd-unix">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/EddaCraft/anvil/releases/latest/download/anvil-cli-installer.sh | sh</code>
+      <button class="copy-btn" onclick="copyCmd('cmd-unix', this)" aria-label="Copy to clipboard" title="Copy">
+        <svg class="icon-copy" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        <svg class="icon-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </button>
+    </div>
   </div>
 
   <div class="section">
     <p class="label">Windows (PowerShell)</p>
-    <code>irm https://github.com/EddaCraft/anvil/releases/latest/download/anvil-cli-installer.ps1 | iex</code>
+    <div class="cmd-block">
+      <code id="cmd-win">irm https://github.com/EddaCraft/anvil/releases/latest/download/anvil-cli-installer.ps1 | iex</code>
+      <button class="copy-btn" onclick="copyCmd('cmd-win', this)" aria-label="Copy to clipboard" title="Copy">
+        <svg class="icon-copy" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        <svg class="icon-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </button>
+    </div>
   </div>
 
   <div class="section">
     <p><a href="https://github.com/EddaCraft/anvil">GitHub</a> &middot; <a href="https://eddacraft.ai">EddaCraft</a></p>
   </div>
+
+  <script>
+    function copyCmd(id, btn) {
+      var text = document.getElementById(id).textContent;
+      navigator.clipboard.writeText(text).then(function() {
+        btn.classList.add('copied');
+        setTimeout(function() {
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
 </body>
 </html>
