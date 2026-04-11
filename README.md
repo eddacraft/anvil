@@ -13,13 +13,13 @@ standards.
 
 ```bash
 curl --proto '=https' --tlsv1.2 -LsSf \
-  https://github.com/EddaCraft/anvil/releases/latest/download/anvil-cli-installer.sh | sh
+  https://github.com/EddaCraft/anvil/releases/latest/download/eddacraft-anvil-installer.sh | sh
 ```
 
 ### Windows (PowerShell)
 
 ```powershell
-irm https://github.com/EddaCraft/anvil/releases/latest/download/anvil-cli-installer.ps1 | iex
+irm https://github.com/EddaCraft/anvil/releases/latest/download/eddacraft-anvil-installer.ps1 | iex
 ```
 
 ## Quick start
@@ -47,7 +47,7 @@ anvil doctor
 | macOS    | x86_64       | Supported |
 | macOS    | aarch64      | Supported |
 | Windows  | x86_64       | Supported |
-| Windows  | aarch64      | Supported |
+| Windows  | aarch64      | Not yet supported |
 
 ## About
 
