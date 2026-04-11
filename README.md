@@ -1,10 +1,10 @@
-# Anvil
+# anvil
 
 Deterministic governance for AI-assisted development.
 
-Anvil is a structural governance tool that gives teams visibility and control
+anvil is a structural governance tool that gives teams visibility and control
 over AI-generated code changes. It runs gate checks, policy enforcement, and
-architecture validation — ensuring AI assistants produce code that meets your
+architecture validation, ensuring AI assistants produce code that meets your
 standards.
 
 ## Install
@@ -51,11 +51,11 @@ anvil doctor
 
 ## About
 
-Anvil is developed by [EddaCraft](https://eddacraft.ai). This repository
+Anvil is developed by [eddacraft](https://eddacraft.ai). This repository
 hosts release binaries and install scripts. Source code is not published here.
 
-All rights reserved. Anvil is proprietary software.
+All rights reserved.
 
 ## Status
 
-Anvil is currently in **closed beta**. Access requires an invitation.
+anvil is currently in **closed beta**. Access requires an invitation.
