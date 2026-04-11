@@ -14,7 +14,14 @@
       padding: 0 1rem;
       line-height: 1.6;
     }
-    h1 { color: #fff; font-size: 1.5rem; }
+    h1 {
+      color: #fff;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    h1 .logo { width: 1.4em; height: 1.4em; flex-shrink: 0; }
     .cmd-block {
       position: relative;
       background: #1a1a1a;
@@ -55,13 +62,29 @@
   </style>
 </head>
 <body>
-  <h1>Anvil CLI</h1>
+  <h1>
+    <svg class="logo" viewBox="0 0 560 560" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M123.2 95.6308H443.692V153.354H123.2V95.6308Z" fill="#EBEBEB"/>
+      <path d="M123.2 200.738H443.692V258.462H123.2V200.738Z" fill="#EBEBEB"/>
+      <path d="M249.846 124.923H316.949V222.277H249.846V124.923Z" fill="#EBEBEB"/>
+      <path d="M249.846 328.246H316.949V425.6H249.846V328.246Z" fill="#EBEBEB"/>
+      <path d="M123.2 298.954H443.692V356.677H123.2V298.954Z" fill="#EBEBEB"/>
+      <path d="M123.2 404.062H443.692V461.785H123.2V404.062Z" fill="#EBEBEB"/>
+      <path d="M560 0H393.21V74.9606H560V0Z" fill="#EBEBEB"/>
+      <path d="M560 73.1969H483.951V485.921H560V73.1969Z" fill="#EBEBEB"/>
+      <path d="M560 485.039H393.21V560H560V485.039Z" fill="#EBEBEB"/>
+      <path d="M0 0H166.79V74.9606H0V0Z" fill="#EBEBEB"/>
+      <path d="M0 73.1969H76.0494V485.921H0V73.1969Z" fill="#EBEBEB"/>
+      <path d="M0 485.039H166.79V560H0V485.039Z" fill="#EBEBEB"/>
+    </svg>
+    Anvil CLI
+  </h1>
   <p>Deterministic governance for AI-assisted development.</p>
 
   <div class="section">
     <p class="label">Linux / macOS</p>
     <div class="cmd-block">
-      <code id="cmd-unix">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/EddaCraft/anvil/releases/latest/download/anvil-cli-installer.sh | sh</code>
+      <code id="cmd-unix">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/EddaCraft/anvil/releases/latest/download/eddacraft-anvil-installer.sh | sh</code>
       <button class="copy-btn" onclick="copyCmd('cmd-unix', this)" aria-label="Copy to clipboard" title="Copy">
         <svg class="icon-copy" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
         <svg class="icon-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -72,7 +95,7 @@
   <div class="section">
     <p class="label">Windows (PowerShell)</p>
     <div class="cmd-block">
-      <code id="cmd-win">irm https://github.com/EddaCraft/anvil/releases/latest/download/anvil-cli-installer.ps1 | iex</code>
+      <code id="cmd-win">irm https://github.com/EddaCraft/anvil/releases/latest/download/eddacraft-anvil-installer.ps1 | iex</code>
       <button class="copy-btn" onclick="copyCmd('cmd-win', this)" aria-label="Copy to clipboard" title="Copy">
         <svg class="icon-copy" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
         <svg class="icon-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -81,7 +104,7 @@
   </div>
 
   <div class="section">
-    <p><a href="https://github.com/EddaCraft/anvil">GitHub</a> &middot; <a href="https://eddacraft.ai">EddaCraft</a></p>
+    <p><a href="https://github.com/EddaCraft/anvil">GitHub</a> &middot; <a href="https://eddacraft.ai">eddacraft</a></p>
   </div>
 
   <script>
