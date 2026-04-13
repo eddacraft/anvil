@@ -59,6 +59,7 @@
     a { color: #7c9aff; }
     .section { margin: 2rem 0; }
     .label { color: #888; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+    .or { color: #555; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; text-align: center; margin: 1.25rem 0; }
   </style>
 </head>
 <body>
@@ -86,6 +87,17 @@
     <div class="cmd-block">
       <code id="cmd-unix">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/EddaCraft/anvil/releases/latest/download/eddacraft-anvil-installer.sh | sh</code>
       <button class="copy-btn" onclick="copyCmd('cmd-unix', this)" aria-label="Copy to clipboard" title="Copy">
+        <svg class="icon-copy" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        <svg class="icon-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </button>
+    </div>
+
+    <div class="or">or</div>
+
+    <p class="label">Homebrew</p>
+    <div class="cmd-block">
+      <code id="cmd-brew">brew install eddacraft/tap/anvil</code>
+      <button class="copy-btn" onclick="copyCmd('cmd-brew', this)" aria-label="Copy to clipboard" title="Copy">
         <svg class="icon-copy" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
         <svg class="icon-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
       </button>
