@@ -1,61 +1,110 @@
-# anvil
+<p align="center">
+  <img src="assets/anvil-logo.svg" alt="anvil" width="120" />
+</p>
 
-Deterministic governance for AI-assisted development.
+<h1 align="center">anvil</h1>
+
+<p align="center">
+  deterministic governance for AI-assisted development
+</p>
+
+<p align="center">
+  <a href="https://github.com/eddacraft/anvil/releases/latest"><img src="https://img.shields.io/github/v/release/eddacraft/anvil?include_prereleases&label=version&color=cc5500" alt="Latest release" /></a>
+  <a href="https://github.com/eddacraft/anvil/releases/latest"><img src="https://img.shields.io/github/downloads/eddacraft/anvil/total?color=333" alt="Downloads" /></a>
+</p>
+
+---
 
 anvil is a structural governance tool that gives teams visibility and control
 over AI-generated code changes. It runs gate checks, policy enforcement, and
-architecture validation, ensuring AI assistants produce code that meets your
+architecture validation — ensuring AI assistants produce code that meets your
 standards.
 
-## Install
+## install
 
-### Linux / macOS
+### linux / macOS
 
 ```bash
 curl --proto '=https' --tlsv1.2 -LsSf \
-  https://github.com/EddaCraft/anvil/releases/latest/download/eddacraft-anvil-installer.sh | sh
+  https://github.com/eddacraft/anvil/releases/latest/download/eddacraft-anvil-installer.sh | sh
 ```
 
-### Windows (PowerShell)
+### windows (PowerShell)
 
 ```powershell
-irm https://github.com/EddaCraft/anvil/releases/latest/download/eddacraft-anvil-installer.ps1 | iex
+irm https://github.com/eddacraft/anvil/releases/latest/download/eddacraft-anvil-installer.ps1 | iex
 ```
 
-## Quick start
+### homebrew
 
 ```bash
-# Authenticate (device code flow)
-anvil auth login
-
-# Run governance checks on the current directory
-anvil gate
-
-# Watch for changes and run checks continuously
-anvil watch
-
-# Check system health
-anvil doctor
+brew install eddacraft/tap/anvil
 ```
 
-## Platform support
+## quick start
 
-| Platform | Architecture | Status |
+```bash
+# authenticate (device code flow)
+anvil auth login
+
+# run governance checks on the current directory
+anvil gate
+
+# watch for changes and run checks continuously
+anvil watch
+
+# interactive onboarding tutorial
+anvil tutorial
+
+# check system health
+anvil doctor
+
+# update to the latest version
+anvil update
+```
+
+## platform support
+
+| platform | architecture | status |
 | -------- | ------------ | ------ |
-| Linux    | x86_64       | Supported |
-| Linux    | aarch64      | Supported |
-| macOS    | x86_64       | Supported |
-| macOS    | aarch64      | Supported |
-| Windows  | x86_64       | Supported |
-| Windows  | aarch64      | Not yet supported |
+| linux    | x86_64       | supported |
+| linux    | aarch64      | supported |
+| macOS    | x86_64       | supported |
+| macOS    | aarch64      | supported |
+| windows  | x86_64       | supported |
+| windows  | aarch64      | supported |
 
-## About
+## issues and feedback
 
-Anvil is developed by [eddacraft](https://eddacraft.ai). This repository
-hosts release binaries and install scripts. Source code is not published here.
+Found a bug or have a feature request? Please
+[open an issue](https://github.com/eddacraft/anvil/issues/new) on this
+repository. When reporting bugs, include:
+
+- anvil version (`anvil --version`)
+- operating system and architecture
+- steps to reproduce
+- expected vs actual behaviour
+
+For questions about beta access, email
+[hello@eddacraft.ai](mailto:hello@eddacraft.ai).
+
+## about
+
+anvil is currently in **closed beta**. Access requires an invitation.
+
+This repository hosts release binaries, install scripts, and issue tracking.
+Source code is not published here.
 
 All rights reserved.
 
-## Status
+---
 
-anvil is currently in **closed beta**. Access requires an invitation.
+<p align="center">
+  <a href="https://eddacraft.ai">
+    <img src="assets/eddacraft-logo.svg" alt="eddacraft" width="28" />
+  </a>
+</p>
+
+<p align="center">
+  <sub>built by <a href="https://eddacraft.ai">eddacraft</a></sub>
+</p>
