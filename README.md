@@ -22,11 +22,21 @@ standards.
 
 ## install
 
+The one-liner for any platform lives at
+**[install.eddacraft.ai](https://install.eddacraft.ai)** — it auto-detects your
+OS and highlights the recommended command.
+
 ### linux / macOS
 
 ```bash
 curl --proto '=https' --tlsv1.2 -LsSf \
   https://github.com/eddacraft/anvil/releases/latest/download/eddacraft-anvil-installer.sh | sh
+```
+
+### homebrew (macOS)
+
+```bash
+brew install eddacraft/tap/anvil
 ```
 
 ### windows (PowerShell)
@@ -35,10 +45,17 @@ curl --proto '=https' --tlsv1.2 -LsSf \
 irm https://github.com/eddacraft/anvil/releases/latest/download/eddacraft-anvil-installer.ps1 | iex
 ```
 
-### homebrew
+### winget (Windows)
 
-```bash
-brew install eddacraft/tap/anvil
+```powershell
+winget install eddacraft.anvil
+```
+
+### scoop (Windows)
+
+```powershell
+scoop bucket add eddacraft https://github.com/eddacraft/scoop-bucket
+scoop install anvil
 ```
 
 ## quick start
