@@ -58,6 +58,9 @@ scoop bucket add eddacraft https://github.com/eddacraft/scoop-bucket
 scoop install anvil
 ```
 
+Full usage guides live at
+[docs.eddacraft.ai/anvil](https://docs.eddacraft.ai/anvil/overview).
+
 ## quick start
 
 ```bash
@@ -105,6 +108,9 @@ repository. When reporting bugs, include:
 For questions about beta access, email
 [hello@eddacraft.ai](mailto:hello@eddacraft.ai).
 
+To report a security vulnerability, please follow [SECURITY.md](SECURITY.md)
+rather than opening a public issue.
+
 ## about
 
 anvil is currently in **closed beta**. Access requires an invitation.
@@ -112,7 +118,7 @@ anvil is currently in **closed beta**. Access requires an invitation.
 This repository hosts release binaries, install scripts, and issue tracking.
 Source code is not published here.
 
-All rights reserved.
+See [LICENSE](LICENSE) for terms. All rights reserved.
 
 ---
 
