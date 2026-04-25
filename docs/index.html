@@ -175,13 +175,13 @@
 
     .options-grid {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
       gap: 1.25rem;
     }
     @media (min-width: 640px) {
-      .options-grid { grid-template-columns: 1fr 1fr; }
+      .options-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
     }
-    .option { display: flex; flex-direction: column; gap: 0.5rem; }
+    .option { display: flex; flex-direction: column; gap: 0.5rem; min-width: 0; }
     .option-title {
       font-size: 0.8rem;
       color: var(--muted);
@@ -333,7 +333,7 @@
       </div>
     </div>
 
-    <div class="option" style="grid-column: 1 / -1;">
+    <div class="option">
       <p class="option-title">Windows · <code>Scoop</code></p>
       <div class="cmd-block">
         <div class="cmd-body">
