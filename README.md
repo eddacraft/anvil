@@ -64,24 +64,47 @@ Full usage guides live at
 ## quick start
 
 ```bash
-# authenticate (device code flow)
+# new to anvil? pick a starting point
+anvil welcome              # quick-start menu
+anvil tutorial             # interactive walkthrough
+anvil wizard               # guided project setup
+
+# activate anvil in this repo
+# (writes .anvilrc / .anvil.<ext> and installs MCP config
+#  for cursor and claude code)
+anvil start
+anvil start --format json  # or `--format toml`
+anvil start --verify       # read-only probe, no writes
+
+# authenticate (device-code flow)
 anvil auth login
+anvil auth whoami
 
-# run governance checks on the current directory
-anvil gate
+# run governance checks
+anvil gate                 # full gate (profile + config driven)
+anvil check                # planless scan: anti-patterns + secrets
+anvil watch                # report findings as you save
 
-# watch for changes and run checks continuously
-anvil watch
+# project state and diagnostics
+anvil status               # project state + protection-claim summary
+anvil doctor               # environment + daemon diagnostics
+anvil insights             # local-only weekly activity summary
 
-# interactive onboarding tutorial
-anvil tutorial
+# witness-chain + policy
+anvil audit                # full project audit
+anvil audit-chain          # walk the branch, report missing L3 witnesses
+anvil l4-validate          # validate commits against anvil/policy.yml
 
-# check system health
-anvil doctor
+# launch an AI agent under anvil's protection
+anvil-run --tool claude-code -- claude
 
-# update to the latest version
-anvil update
+# version + updates
+anvil version --check      # check for newer releases and advisories
+anvil update               # update to the latest version
 ```
+
+Run `anvil --help` for the full command list, or
+`anvil <command> --help` for any subcommand.
 
 ## platform support
 
