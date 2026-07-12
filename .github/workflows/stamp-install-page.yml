@@ -1,0 +1,60 @@
+name: Stamp install page version
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stamp-install-page
+  cancel-in-progress: false
+
+jobs:
+  stamp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Resolve release tag and date
+        id: rel
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ github.event_name }}" = "release" ]; then
+            tag='${{ github.event.release.tag_name }}'
+            published='${{ github.event.release.published_at }}'
+          else
+            tag=$(gh api "repos/${{ github.repository }}/releases/latest" --jq .tag_name)
+            published=$(gh api "repos/${{ github.repository }}/releases/latest" --jq .published_at)
+          fi
+          # Only anvil releases (vX.Y.Z...) stamp the page; skip anything else.
+          case "$tag" in
+            v[0-9]*) ;;
+            *) echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0 ;;
+          esac
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "date=$(date -u -d "$published" '+%-d %b %Y')" >> "$GITHUB_OUTPUT"
+
+      - name: Stamp baked version into docs/index.html
+        if: steps.rel.outputs.skip != 'true'
+        run: |
+          sed -E -i 's|(id="version-tag">)[^<]*(</a>)|\1${{ steps.rel.outputs.tag }}\2|' docs/index.html
+          sed -E -i 's|(id="release-date">)[^<]*(</span>)|\1released ${{ steps.rel.outputs.date }}\2|' docs/index.html
+
+      - name: Commit and push
+        if: steps.rel.outputs.skip != 'true'
+        run: |
+          if git diff --quiet docs/index.html; then
+            echo "Page already stamped with ${{ steps.rel.outputs.tag }}"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/index.html
+          git commit -m "chore(install): stamp ${{ steps.rel.outputs.tag }} into install page"
+          git push origin main
