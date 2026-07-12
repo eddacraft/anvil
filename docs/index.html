@@ -4,7 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anvil CLI — Install</title>
-  <meta name="description" content="Install Anvil — deterministic governance for AI-assisted development. curl, Homebrew, WinGet, Scoop, or PowerShell.">
+  <meta name="description" content="Install Anvil — gate checks and policy enforcement for AI-generated code. curl, Homebrew, WinGet, Scoop, or PowerShell.">
+  <link rel="canonical" href="https://install.eddacraft.ai/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Anvil CLI">
+  <meta property="og:title" content="Install Anvil CLI">
+  <meta property="og:description" content="Gate checks and policy enforcement for AI-generated code — catch violations before they land. One-line install for Linux, macOS, and Windows.">
+  <meta property="og:url" content="https://install.eddacraft.ai/">
+  <meta property="og:image" content="https://install.eddacraft.ai/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Install Anvil CLI">
+  <meta name="twitter:description" content="Gate checks and policy enforcement for AI-generated code — catch violations before they land.">
+  <meta name="twitter:image" content="https://install.eddacraft.ai/og.png">
   <style>
     :root {
       --bg: #0a0a0a;
@@ -45,6 +61,34 @@
     }
     h1 .logo { width: 1.5em; height: 1.5em; flex-shrink: 0; }
     .tagline { color: var(--muted); margin: 0; font-size: 1rem; }
+
+    .release-line {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.35rem 0.85rem;
+      margin-top: 0.9rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .version-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.75rem;
+      border: 1px solid var(--accent-dim);
+      border-radius: 999px;
+      background: rgba(204, 85, 0, 0.08);
+      color: var(--text);
+      font-family: "SF Mono", "JetBrains Mono", "Fira Code", "Cascadia Code", ui-monospace, monospace;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: border-color 0.15s;
+    }
+    .version-pill:hover { border-color: var(--accent); }
+    .release-line .sep { color: var(--dim); }
+    .release-line a:not(.version-pill) { color: var(--link); text-decoration: none; }
+    .release-line a:not(.version-pill):hover { text-decoration: underline; }
 
     h2 {
       font-size: 0.78rem;
@@ -241,7 +285,13 @@
       </svg>
       Anvil CLI
     </h1>
-    <p class="tagline">Deterministic governance for AI-assisted development.</p>
+    <p class="tagline">Gate checks and policy enforcement for AI-generated code — catch violations before they land.</p>
+    <div class="release-line">
+      <a class="version-pill" href="https://github.com/eddacraft/anvil/releases/latest" id="version-tag">v0.9.0-beta</a>
+      <span id="release-date">released 12 Jul 2026</span>
+      <span class="sep" aria-hidden="true">·</span>
+      <a href="https://github.com/eddacraft/anvil/releases">Previous versions</a>
+    </div>
   </header>
 
   <section aria-labelledby="recommended-heading">
@@ -391,6 +441,25 @@
           });
         });
       });
+
+      // Refresh the baked-in version badge from the latest GitHub release;
+      // on any failure the baked values stay.
+      if (window.fetch) {
+        fetch('https://api.github.com/repos/eddacraft/anvil/releases/latest', {
+          headers: { Accept: 'application/vnd.github+json' }
+        })
+          .then(function (r) { return r.ok ? r.json() : null; })
+          .then(function (rel) {
+            if (!rel || !rel.tag_name) return;
+            document.getElementById('version-tag').textContent = rel.tag_name;
+            if (rel.published_at) {
+              var d = new Date(rel.published_at);
+              document.getElementById('release-date').textContent =
+                'released ' + d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+            }
+          })
+          .catch(function () {});
+      }
     })();
   </script>
 </body>
