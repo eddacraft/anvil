@@ -45,6 +45,7 @@ Produced by `evidence-gate` before any success claim, land, or handoff to `verif
 - Claim: <what is being claimed>
 - Commands:
   - `<cmd>` → exit <n> — <one-line summary>
+- Classification: product-failure | tooling-environment | inherited-baseline | pass
 - Base..head: <sha>..<sha> (if known)
 - Result: supported | not-supported
 - Notes: <gaps, inherited failures, skipped gates with reason>
@@ -55,6 +56,8 @@ Rules:
 1. Fresh run in this turn — prior logs do not count.
 2. Read full output and exit codes; do not summarise from memory.
 3. Absence of a run is not a pass.
+4. Tooling/sandbox/environment failures are not product failures until rerun in a
+   hermetic writable environment still proves a product defect.
 
 Independent adversarial verification uses `verify-loop` and
 `dev-loop-core/references/evidence-bundle.schema.json`. The executor evidence

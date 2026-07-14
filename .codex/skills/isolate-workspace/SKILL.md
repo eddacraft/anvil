@@ -194,7 +194,6 @@ ReadyItem: <id>
 
 - Decision: isolated | reused | blocked
 - Next: build-tdd | stop
-- Notes: <path, branch, setup, baseline>
 - Notes: <path, branch, setup, baseline, write-gate>
 ```
 
