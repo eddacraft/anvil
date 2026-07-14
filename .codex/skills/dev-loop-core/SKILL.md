@@ -16,6 +16,11 @@ Scope comes from the target; mode controls checkpoints and authority.
 Shared contracts: [references/contracts.md](references/contracts.md).
 Policy / claims / evidence schemas: [references/](references/).
 
+Run checkpoint path: `.dev-loop/checkpoints/<runId>.json`. The orchestrator owns
+this file: create it after Resolve, update it after every phase transition,
+evidence gate, verifier decision, repair, PR state change, and final outcome.
+If `.dev-loop/` is missing, create it on the feature branch, not on integration.
+
 ## Invocation
 
 ```text
@@ -70,6 +75,10 @@ Do **not** route through `planning-workflow`, `brainstorming`, `writing-plans`,
 6. Fresh adversarial verification via `verify-loop`. Verifier is read-only. Prefer a different model/harness for high-risk or disputed findings when available.
 7. Evidence gates every transition. No advance from confidence or another agent's success claim.
 8. Repository policy and branch protection outrank the mode flag. Session-scoped human overrides must name scope, authority, expiry, and be recorded in evidence.
+9. During `land-branch`, APS status/Files/evidence reconciliation is explicit
+   loop authority for the current ReadyItem. This overrides passive
+   `aps-planning` advice to always ask before edits; broader scope changes still
+   require a checkpoint.
 
 ## Roles
 
@@ -155,6 +164,10 @@ dependency tip** (not from stale integration). Reuse current worktree only when
 clean, already on the owned feature branch, and no parallel writer. Otherwise
 Worktrunk / worktree + fresh PR branch. Green baseline or documented inherited
 failures. Always run Setup after create/switch.
+
+Checkpoint: write `.dev-loop/checkpoints/<runId>.json` with `phase: claimed`,
+branch, workspace, base revision, mode, target, and next action. Update the same
+file after each later phase; do not create multiple checkpoint locations.
 
 ### 3. Design when required
 
