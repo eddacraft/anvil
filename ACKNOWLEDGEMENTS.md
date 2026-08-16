@@ -162,7 +162,7 @@ named in the crate source linked from the inventory table.
 
 ## Licence summary
 
-- **MIT License** — 361 crates
+- **MIT License** — 356 crates
 - **Unicode License v3** — 19 crates
 - **Apache License 2.0** — 17 crates
 - **ISC License** — 7 crates
@@ -1993,7 +1993,7 @@ limitations under the License.
 
 Used by:
 
-- `aws-lc-sys` 0.43.0
+- `aws-lc-sys` 0.44.0
 - `kindling-client` 0.3.0
 - `kindling-types` 0.3.0
 - `ryu` 1.0.23
@@ -2173,7 +2173,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Used by:
 
-- `aws-lc-sys` 0.43.0
+- `aws-lc-sys` 0.44.0
 - `regorus` 0.11.0
 
 <details>
@@ -2338,7 +2338,7 @@ THIS SOFTWARE.
 
 Used by:
 
-- `rustls-webpki` 0.103.13
+- `rustls-webpki` 0.103.14
 
 <details>
 <summary>Licence text</summary>
@@ -2372,8 +2372,8 @@ third-party/chromium/LICENSE.
 
 Used by:
 
-- `aws-lc-rs` 1.17.3
-- `aws-lc-sys` 0.43.0
+- `aws-lc-rs` 1.18.0
+- `aws-lc-sys` 0.44.0
 
 <details>
 <summary>Licence text</summary>
@@ -2948,8 +2948,8 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- `libsqlite3-sys` 0.38.1
-- `rusqlite` 0.40.1
+- `libsqlite3-sys` 0.38.2
+- `rusqlite` 0.40.2
 
 <details>
 <summary>Licence text</summary>
@@ -3499,13 +3499,13 @@ THE SOFTWARE.
 
 Used by:
 
-- `futures-channel` 0.3.33
-- `futures-core` 0.3.33
-- `futures-io` 0.3.33
-- `futures-macro` 0.3.33
-- `futures-sink` 0.3.33
-- `futures-task` 0.3.33
-- `futures-util` 0.3.33
+- `futures-channel` 0.3.34
+- `futures-core` 0.3.34
+- `futures-io` 0.3.34
+- `futures-macro` 0.3.34
+- `futures-sink` 0.3.34
+- `futures-task` 0.3.34
+- `futures-util` 0.3.34
 
 <details>
 <summary>Licence text</summary>
@@ -5305,7 +5305,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- `http-body-util` 0.1.4
+- `http-body-util` 0.1.5
 - `http-body` 1.1.0
 
 <details>
@@ -6614,13 +6614,10 @@ SOFTWARE.
 Used by:
 
 - `darling` 0.20.11
-- `darling` 0.23.0
 - `darling` 0.24.0
 - `darling_core` 0.20.11
-- `darling_core` 0.23.0
 - `darling_core` 0.24.0
 - `darling_macro` 0.20.11
-- `darling_macro` 0.23.0
 - `darling_macro` 0.24.0
 
 <details>
@@ -6694,7 +6691,7 @@ SOFTWARE.
 Used by:
 
 - `bytemuck` 1.25.2
-- `bytemuck_derive` 1.11.0
+- `bytemuck_derive` 1.12.0
 
 <details>
 <summary>Licence text</summary>
@@ -7336,8 +7333,6 @@ SOFTWARE.
 Used by:
 
 - `animate-core` 0.3.0
-- `animate-macros` 0.3.0
-- `animate` 0.3.0
 - `axoupdater` 0.10.0
 - `backtrace-ext` 0.2.1
 - `block2` 0.6.2
@@ -7669,8 +7664,8 @@ Used by:
 - `serde_yaml` 0.9.34+deprecated
 - `syn` 2.0.119
 - `syn` 3.0.3
-- `thiserror-impl` 2.0.19
-- `thiserror` 2.0.19
+- `thiserror-impl` 2.0.20
+- `thiserror` 2.0.20
 - `unicode-ident` 1.0.24
 - `unsafe-libyaml` 0.2.11
 - `zmij` 1.0.23
@@ -8260,7 +8255,7 @@ SOFTWARE.
 
 Used by:
 
-- `aws-lc-sys` 0.43.0
+- `aws-lc-sys` 0.44.0
 
 <details>
 <summary>Licence text</summary>
@@ -8596,7 +8591,7 @@ SOFTWARE.
 Used by:
 
 - `tree-sitter-language` 0.1.7
-- `tree-sitter` 0.26.11
+- `tree-sitter` 0.26.12
 
 <details>
 <summary>Licence text</summary>
@@ -8632,7 +8627,7 @@ SOFTWARE.
 
 Used by:
 
-- `bstr` 1.13.0
+- `bstr` 1.13.1
 
 <details>
 <summary>Licence text</summary>
@@ -9420,22 +9415,22 @@ the following restrictions:
 | `supports-color` | 3.0.2 | Apache License 2.0 | https://github.com/zkat/supports-color |
 | `supports-hyperlinks` | 3.2.0 | Apache License 2.0 | https://github.com/zkat/supports-hyperlinks |
 | `supports-unicode` | 3.0.0 | Apache License 2.0 | https://github.com/zkat/supports-unicode |
-| `aws-lc-sys` | 0.43.0 | Apache License 2.0 | https://github.com/aws/aws-lc-rs |
+| `aws-lc-sys` | 0.44.0 | Apache License 2.0 | https://github.com/aws/aws-lc-rs |
 | `kindling-client` | 0.3.0 | Apache License 2.0 | https://github.com/eddacraft/kindling |
 | `kindling-types` | 0.3.0 | Apache License 2.0 | https://github.com/eddacraft/kindling |
 | `ryu` | 1.0.23 | Apache License 2.0 | https://github.com/dtolnay/ryu |
 | `sync_wrapper` | 1.0.2 | Apache License 2.0 | https://github.com/Actyx/sync_wrapper |
 | `matchit` | 0.8.4 | BSD 3-Clause "New" or "Revised" License | https://github.com/ibraheemdev/matchit |
 | `subtle` | 2.6.1 | BSD 3-Clause "New" or "Revised" License | https://github.com/dalek-cryptography/subtle |
-| `aws-lc-sys` | 0.43.0 | BSD 3-Clause "New" or "Revised" License | https://github.com/aws/aws-lc-rs |
+| `aws-lc-sys` | 0.44.0 | BSD 3-Clause "New" or "Revised" License | https://github.com/aws/aws-lc-rs |
 | `regorus` | 0.11.0 | BSD 3-Clause "New" or "Revised" License | https://github.com/microsoft/regorus |
 | `notify` | 8.2.0 | Creative Commons Zero v1.0 Universal | https://github.com/notify-rs/notify.git |
 | `untrusted` | 0.9.0 | ISC License | https://github.com/briansmith/untrusted |
 | `inotify-sys` | 0.1.8 | ISC License | https://github.com/hannobraun/inotify-sys |
 | `inotify` | 0.11.4 | ISC License | https://github.com/hannobraun/inotify-rs |
-| `rustls-webpki` | 0.103.13 | ISC License | https://github.com/rustls/webpki |
-| `aws-lc-rs` | 1.17.3 | ISC License | https://github.com/aws/aws-lc-rs |
-| `aws-lc-sys` | 0.43.0 | ISC License | https://github.com/aws/aws-lc-rs |
+| `rustls-webpki` | 0.103.14 | ISC License | https://github.com/rustls/webpki |
+| `aws-lc-rs` | 1.18.0 | ISC License | https://github.com/aws/aws-lc-rs |
+| `aws-lc-sys` | 0.44.0 | ISC License | https://github.com/aws/aws-lc-rs |
 | `is_ci` | 1.2.0 | ISC License | https://github.com/zkat/is_ci |
 | `msvc_spectre_libs` | 0.1.3 | MIT License | https://github.com/microsoft/rust_msvc_spectre_libs |
 | `instability` | 0.3.13 | MIT License | https://github.com/ratatui/instability |
@@ -9474,8 +9469,8 @@ the following restrictions:
 | `regex-syntax` | 0.8.11 | MIT License | https://github.com/rust-lang/regex |
 | `regex` | 1.13.1 | MIT License | https://github.com/rust-lang/regex |
 | `uuid` | 1.24.0 | MIT License | https://github.com/uuid-rs/uuid |
-| `libsqlite3-sys` | 0.38.1 | MIT License | https://github.com/rusqlite/rusqlite |
-| `rusqlite` | 0.40.1 | MIT License | https://github.com/rusqlite/rusqlite |
+| `libsqlite3-sys` | 0.38.2 | MIT License | https://github.com/rusqlite/rusqlite |
+| `rusqlite` | 0.40.2 | MIT License | https://github.com/rusqlite/rusqlite |
 | `flate2` | 1.1.9 | MIT License | https://github.com/rust-lang/flate2-rs |
 | `hyper` | 1.11.0 | MIT License | https://github.com/hyperium/hyper |
 | `either` | 1.17.0 | MIT License | https://github.com/rayon-rs/either |
@@ -9499,13 +9494,13 @@ the following restrictions:
 | `winapi` | 0.3.9 | MIT License | https://github.com/retep998/winapi-rs |
 | `httparse` | 1.10.1 | MIT License | https://github.com/seanmonstar/httparse |
 | `num_cpus` | 1.17.0 | MIT License | https://github.com/seanmonstar/num_cpus |
-| `futures-channel` | 0.3.33 | MIT License | https://github.com/rust-lang/futures-rs |
-| `futures-core` | 0.3.33 | MIT License | https://github.com/rust-lang/futures-rs |
-| `futures-io` | 0.3.33 | MIT License | https://github.com/rust-lang/futures-rs |
-| `futures-macro` | 0.3.33 | MIT License | https://github.com/rust-lang/futures-rs |
-| `futures-sink` | 0.3.33 | MIT License | https://github.com/rust-lang/futures-rs |
-| `futures-task` | 0.3.33 | MIT License | https://github.com/rust-lang/futures-rs |
-| `futures-util` | 0.3.33 | MIT License | https://github.com/rust-lang/futures-rs |
+| `futures-channel` | 0.3.34 | MIT License | https://github.com/rust-lang/futures-rs |
+| `futures-core` | 0.3.34 | MIT License | https://github.com/rust-lang/futures-rs |
+| `futures-io` | 0.3.34 | MIT License | https://github.com/rust-lang/futures-rs |
+| `futures-macro` | 0.3.34 | MIT License | https://github.com/rust-lang/futures-rs |
+| `futures-sink` | 0.3.34 | MIT License | https://github.com/rust-lang/futures-rs |
+| `futures-task` | 0.3.34 | MIT License | https://github.com/rust-lang/futures-rs |
+| `futures-util` | 0.3.34 | MIT License | https://github.com/rust-lang/futures-rs |
 | `hashbrown` | 0.15.5 | MIT License | https://github.com/rust-lang/hashbrown |
 | `hashbrown` | 0.16.1 | MIT License | https://github.com/rust-lang/hashbrown |
 | `hashbrown` | 0.17.1 | MIT License | https://github.com/rust-lang/hashbrown |
@@ -9568,7 +9563,7 @@ the following restrictions:
 | `tower` | 0.5.3 | MIT License | https://github.com/tower-rs/tower |
 | `axum` | 0.8.9 | MIT License | https://github.com/tokio-rs/axum |
 | `tower-http` | 0.6.11 | MIT License | https://github.com/tower-rs/tower-http |
-| `http-body-util` | 0.1.4 | MIT License | https://github.com/hyperium/http-body |
+| `http-body-util` | 0.1.5 | MIT License | https://github.com/hyperium/http-body |
 | `http-body` | 1.1.0 | MIT License | https://github.com/hyperium/http-body |
 | `chacha20` | 0.10.1 | MIT License | https://github.com/RustCrypto/stream-ciphers |
 | `iana-time-zone` | 0.1.65 | MIT License | https://github.com/strawlab/iana-time-zone |
@@ -9626,17 +9621,14 @@ the following restrictions:
 | `smawk` | 0.3.3 | MIT License | https://github.com/mgeisler/smawk |
 | `static_assertions` | 1.1.0 | MIT License | https://github.com/nvzqz/static-assertions-rs |
 | `darling` | 0.20.11 | MIT License | https://github.com/TedDriggs/darling |
-| `darling` | 0.23.0 | MIT License | https://github.com/TedDriggs/darling |
 | `darling` | 0.24.0 | MIT License | https://github.com/TedDriggs/darling |
 | `darling_core` | 0.20.11 | MIT License | https://github.com/TedDriggs/darling |
-| `darling_core` | 0.23.0 | MIT License | https://github.com/TedDriggs/darling |
 | `darling_core` | 0.24.0 | MIT License | https://github.com/TedDriggs/darling |
 | `darling_macro` | 0.20.11 | MIT License | https://github.com/TedDriggs/darling |
-| `darling_macro` | 0.23.0 | MIT License | https://github.com/TedDriggs/darling |
 | `darling_macro` | 0.24.0 | MIT License | https://github.com/TedDriggs/darling |
 | `crc32fast` | 1.5.0 | MIT License | https://github.com/srijs/rust-crc32fast |
 | `bytemuck` | 1.25.2 | MIT License | https://github.com/Lokathor/bytemuck |
-| `bytemuck_derive` | 1.11.0 | MIT License | https://github.com/Lokathor/bytemuck |
+| `bytemuck_derive` | 1.12.0 | MIT License | https://github.com/Lokathor/bytemuck |
 | `strum` | 0.28.0 | MIT License | https://github.com/Peternator7/strum |
 | `strum_macros` | 0.28.0 | MIT License | https://github.com/Peternator7/strum |
 | `email_address` | 0.2.9 | MIT License | https://github.com/johnstonskj/rust-email_address.git |
@@ -9657,8 +9649,6 @@ the following restrictions:
 | `convert_case` | 0.10.0 | MIT License | https://github.com/rutrum/convert-case |
 | `tree-sitter-dart` | 0.2.0 | MIT License | https://github.com/nielsenko/tree-sitter-dart |
 | `animate-core` | 0.3.0 | MIT License | https://github.com/vyfor/animate |
-| `animate-macros` | 0.3.0 | MIT License | https://github.com/vyfor/animate |
-| `animate` | 0.3.0 | MIT License | https://github.com/vyfor/animate |
 | `axoupdater` | 0.10.0 | MIT License | https://github.com/axodotdev/axoupdater |
 | `backtrace-ext` | 0.2.1 | MIT License | https://github.com/gankra/backtrace-ext |
 | `block2` | 0.6.2 | MIT License | https://github.com/madsmtm/objc2 |
@@ -9742,8 +9732,8 @@ the following restrictions:
 | `serde_yaml` | 0.9.34+deprecated | MIT License | https://github.com/dtolnay/serde-yaml |
 | `syn` | 2.0.119 | MIT License | https://github.com/dtolnay/syn |
 | `syn` | 3.0.3 | MIT License | https://github.com/dtolnay/syn |
-| `thiserror-impl` | 2.0.19 | MIT License | https://github.com/dtolnay/thiserror |
-| `thiserror` | 2.0.19 | MIT License | https://github.com/dtolnay/thiserror |
+| `thiserror-impl` | 2.0.20 | MIT License | https://github.com/dtolnay/thiserror |
+| `thiserror` | 2.0.20 | MIT License | https://github.com/dtolnay/thiserror |
 | `unicode-ident` | 1.0.24 | MIT License | https://github.com/dtolnay/unicode-ident |
 | `unsafe-libyaml` | 0.2.11 | MIT License | https://github.com/dtolnay/unsafe-libyaml |
 | `zmij` | 1.0.23 | MIT License | https://github.com/dtolnay/zmij |
@@ -9774,7 +9764,7 @@ the following restrictions:
 | `security-framework-sys` | 2.17.0 | MIT License | https://github.com/kornelski/rust-security-framework |
 | `security-framework` | 3.7.0 | MIT License | https://github.com/kornelski/rust-security-framework |
 | `data-encoding` | 2.11.1 | MIT License | https://github.com/ia0/data-encoding |
-| `aws-lc-sys` | 0.43.0 | MIT License | https://github.com/aws/aws-lc-rs |
+| `aws-lc-sys` | 0.44.0 | MIT License | https://github.com/aws/aws-lc-rs |
 | `kasuari` | 0.4.12 | MIT License | https://github.com/ratatui/kasuari |
 | `derive_more-impl` | 2.1.1 | MIT License | https://github.com/JelteF/derive_more |
 | `derive_more` | 2.1.1 | MIT License | https://github.com/JelteF/derive_more |
@@ -9791,8 +9781,8 @@ the following restrictions:
 | `console` | 0.16.4 | MIT License | https://github.com/console-rs/console |
 | `tree-sitter-rust` | 0.24.2 | MIT License | https://github.com/tree-sitter/tree-sitter-rust |
 | `tree-sitter-language` | 0.1.7 | MIT License | https://github.com/tree-sitter/tree-sitter |
-| `tree-sitter` | 0.26.11 | MIT License | https://github.com/tree-sitter/tree-sitter |
-| `bstr` | 1.13.0 | MIT License | https://github.com/BurntSushi/bstr |
+| `tree-sitter` | 0.26.12 | MIT License | https://github.com/tree-sitter/tree-sitter |
+| `bstr` | 1.13.1 | MIT License | https://github.com/BurntSushi/bstr |
 | `fuzzy-matcher` | 0.3.7 | MIT License | https://github.com/lotabout/fuzzy-matcher |
 | `crossbeam-deque` | 0.8.7 | MIT License | https://github.com/crossbeam-rs/crossbeam |
 | `crossbeam-epoch` | 0.9.20 | MIT License | https://github.com/crossbeam-rs/crossbeam |
@@ -10034,7 +10024,7 @@ section above; this block focuses on the build-time runtime surface.
 | minimist | 1.2.8 | MIT | https://github.com/minimistjs/minimist |
 | mkdirp | 0.5.6 | MIT | https://github.com/substack/node-mkdirp |
 | ms | 2.1.3 | MIT | https://github.com/vercel/ms |
-| nanoid | 3.3.17 | MIT | https://github.com/ai/nanoid |
+| nanoid | 3.3.18 | MIT | https://github.com/ai/nanoid |
 | nopt | 4.0.3 | ISC | https://github.com/npm/nopt |
 | normalize-package-data | 2.5.0 | BSD-2-Clause | https://github.com/npm/normalize-package-data |
 | npm-normalize-package-bin | 1.0.1 | ISC | https://github.com/npm/npm-normalize-package-bin |
