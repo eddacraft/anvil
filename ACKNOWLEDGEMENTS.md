@@ -162,7 +162,7 @@ named in the crate source linked from the inventory table.
 
 ## Licence summary
 
-- **MIT License** — 356 crates
+- **MIT License** — 357 crates
 - **Unicode License v3** — 19 crates
 - **Apache License 2.0** — 17 crates
 - **ISC License** — 7 crates
@@ -4279,7 +4279,7 @@ SOFTWARE.
 
 Used by:
 
-- `h2` 0.4.15
+- `h2` 0.4.16
 
 <details>
 <summary>Licence text</summary>
@@ -7367,6 +7367,7 @@ Used by:
 - `windows-strings` 0.4.2
 - `windows-strings` 0.5.1
 - `windows-sys` 0.52.0
+- `windows-sys` 0.59.0
 - `windows-sys` 0.60.2
 - `windows-sys` 0.61.2
 - `windows-targets` 0.52.6
@@ -9527,7 +9528,7 @@ the following restrictions:
 | `heapless` | 0.7.17 | MIT License | https://github.com/japaric/heapless |
 | `stable_deref_trait` | 1.2.1 | MIT License | https://github.com/storyyeller/stable_deref_trait |
 | `bytecount` | 0.6.9 | MIT License | https://github.com/llogiq/bytecount |
-| `h2` | 0.4.15 | MIT License | https://github.com/hyperium/h2 |
+| `h2` | 0.4.16 | MIT License | https://github.com/hyperium/h2 |
 | `http` | 1.5.0 | MIT License | https://github.com/hyperium/http |
 | `tokio-rustls` | 0.26.4 | MIT License | https://github.com/rustls/tokio-rustls |
 | `signal-hook-mio` | 0.2.5 | MIT License | https://github.com/vorner/signal-hook |
@@ -9683,6 +9684,7 @@ the following restrictions:
 | `windows-strings` | 0.4.2 | MIT License | https://github.com/microsoft/windows-rs |
 | `windows-strings` | 0.5.1 | MIT License | https://github.com/microsoft/windows-rs |
 | `windows-sys` | 0.52.0 | MIT License | https://github.com/microsoft/windows-rs |
+| `windows-sys` | 0.59.0 | MIT License | https://github.com/microsoft/windows-rs |
 | `windows-sys` | 0.60.2 | MIT License | https://github.com/microsoft/windows-rs |
 | `windows-sys` | 0.61.2 | MIT License | https://github.com/microsoft/windows-rs |
 | `windows-targets` | 0.52.6 | MIT License | https://github.com/microsoft/windows-rs |
