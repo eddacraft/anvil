@@ -162,7 +162,7 @@ named in the crate source linked from the inventory table.
 
 ## Licence summary
 
-- **MIT License** — 357 crates
+- **MIT License** — 356 crates
 - **Unicode License v3** — 19 crates
 - **Apache License 2.0** — 17 crates
 - **ISC License** — 7 crates
@@ -2907,7 +2907,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- `uuid` 1.24.0
+- `uuid` 1.24.1
 
 <details>
 <summary>Licence text</summary>
@@ -7332,8 +7332,8 @@ SOFTWARE.
 
 Used by:
 
-- `animate-core` 0.3.0
-- `axoupdater` 0.10.0
+- `animate-core` 0.4.1
+- `axoupdater` 0.10.2
 - `backtrace-ext` 0.2.1
 - `block2` 0.6.2
 - `chrono` 0.4.45
@@ -7367,7 +7367,6 @@ Used by:
 - `windows-strings` 0.4.2
 - `windows-strings` 0.5.1
 - `windows-sys` 0.52.0
-- `windows-sys` 0.59.0
 - `windows-sys` 0.60.2
 - `windows-sys` 0.61.2
 - `windows-targets` 0.52.6
@@ -9469,7 +9468,7 @@ the following restrictions:
 | `regex-automata` | 0.4.18 | MIT License | https://github.com/rust-lang/regex |
 | `regex-syntax` | 0.8.11 | MIT License | https://github.com/rust-lang/regex |
 | `regex` | 1.13.1 | MIT License | https://github.com/rust-lang/regex |
-| `uuid` | 1.24.0 | MIT License | https://github.com/uuid-rs/uuid |
+| `uuid` | 1.24.1 | MIT License | https://github.com/uuid-rs/uuid |
 | `libsqlite3-sys` | 0.38.2 | MIT License | https://github.com/rusqlite/rusqlite |
 | `rusqlite` | 0.40.2 | MIT License | https://github.com/rusqlite/rusqlite |
 | `flate2` | 1.1.9 | MIT License | https://github.com/rust-lang/flate2-rs |
@@ -9649,8 +9648,8 @@ the following restrictions:
 | `fluent-uri` | 0.4.1 | MIT License | https://github.com/yescallop/fluent-uri-rs |
 | `convert_case` | 0.10.0 | MIT License | https://github.com/rutrum/convert-case |
 | `tree-sitter-dart` | 0.2.0 | MIT License | https://github.com/nielsenko/tree-sitter-dart |
-| `animate-core` | 0.3.0 | MIT License | https://github.com/vyfor/animate |
-| `axoupdater` | 0.10.0 | MIT License | https://github.com/axodotdev/axoupdater |
+| `animate-core` | 0.4.1 | MIT License | https://github.com/vyfor/animate |
+| `axoupdater` | 0.10.2 | MIT License | https://github.com/axodotdev/axoupdater |
 | `backtrace-ext` | 0.2.1 | MIT License | https://github.com/gankra/backtrace-ext |
 | `block2` | 0.6.2 | MIT License | https://github.com/madsmtm/objc2 |
 | `chrono` | 0.4.45 | MIT License | https://github.com/chronotope/chrono |
@@ -9684,7 +9683,6 @@ the following restrictions:
 | `windows-strings` | 0.4.2 | MIT License | https://github.com/microsoft/windows-rs |
 | `windows-strings` | 0.5.1 | MIT License | https://github.com/microsoft/windows-rs |
 | `windows-sys` | 0.52.0 | MIT License | https://github.com/microsoft/windows-rs |
-| `windows-sys` | 0.59.0 | MIT License | https://github.com/microsoft/windows-rs |
 | `windows-sys` | 0.60.2 | MIT License | https://github.com/microsoft/windows-rs |
 | `windows-sys` | 0.61.2 | MIT License | https://github.com/microsoft/windows-rs |
 | `windows-targets` | 0.52.6 | MIT License | https://github.com/microsoft/windows-rs |
