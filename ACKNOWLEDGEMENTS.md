@@ -100,9 +100,22 @@ Special thanks to the projects we rely on every day.
 ### Developer environment
 
 - [Claude Code][claude-code] — AI pair programmer used daily on Anvil
+- [Cursor][cursor] — AI pair programmer used daily on Anvil
+- [Codex][codex] — OpenAI coding agent used daily on Anvil
+- [Grok][grok] — xAI coding agent used daily on Anvil
+- [GitHub Copilot][copilot] — AI pair programmer and pull-request reviewer
+- [OpenCode][opencode] — open-source coding agent used on Anvil
+- [Sakana AI][sakana] — Tokyo research lab (AI Scientist, Darwin Gödel Machine)
+  whose work informs Anvil's agent practice
 - [Node.js][nodejs] — JavaScript runtime
 
 [claude-code]: https://claude.com/claude-code
+[cursor]: https://cursor.com
+[codex]: https://github.com/openai/codex
+[grok]: https://x.ai
+[copilot]: https://github.com/features/copilot
+[opencode]: https://opencode.ai
+[sakana]: https://sakana.ai
 [nodejs]: https://nodejs.org/
 
 ### Code adapted into Anvil
@@ -141,6 +154,28 @@ compiled at build time; it retains its original licence.
 
 [tree-sitter-wasm]: https://github.com/wasm-lsp/tree-sitter-wasm
 
+### Vendored detection rules
+
+Anvil vendors secret-detection **knowledge as data** and compiles it into its
+own scanner. No third-party detection engine, binary, or runtime enters the
+product (ADR-136).
+
+- [gitleaks][gitleaks] — MIT. Anvil's `secret-detection` check carries a
+  hand-selected, high-confidence tier of the gitleaks ruleset, converted from
+  the upstream config at a digest-verified pin and stored at
+  `crates/anvil-checks/src/secret/vendor/gitleaks/` with the upstream `LICENSE`
+  and a `PROVENANCE.md` recording tag, commit, retrieval date and SHA-256.
+  Regenerate or verify with `scripts/secret/refresh-gitleaks-ruleset.sh`
+  (`--check` fails on drift). The regexes are taken **verbatim**; the engine,
+  the allowlist tiers, and the suppression provenance around them are Anvil's.
+
+This entry is **hand-curated, and no generated gate will keep it honest**:
+`ACKNOWLEDGEMENTS.md` is generated from dependency manifests, and a vendored
+data file is a dependency of neither `cargo-about` nor `license-checker`, so it
+appears in neither auto-generated block below (ADR-136 §5).
+
+[gitleaks]: https://github.com/gitleaks/gitleaks
+
 ---
 
 <!-- THIRD-PARTY ATTRIBUTION -->
@@ -162,7 +197,7 @@ named in the crate source linked from the inventory table.
 
 ## Licence summary
 
-- **MIT License** — 356 crates
+- **MIT License** — 368 crates
 - **Unicode License v3** — 19 crates
 - **Apache License 2.0** — 17 crates
 - **ISC License** — 7 crates
@@ -395,7 +430,7 @@ Used by:
 
 Used by:
 
-- `eddacraft-tui` 0.5.0
+- `eddacraft-tui` 0.5.2
 
 <details>
 <summary>Licence text</summary>
@@ -1476,7 +1511,7 @@ limitations under the License.
 
 Used by:
 
-- `regorus` 0.11.0
+- `regorus` 0.12.0
 
 <details>
 <summary>Licence text</summary>
@@ -1767,7 +1802,6 @@ AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
      
 
-
       "License" shall mean the terms and conditions for use, reproduction, and
 distribution as defined by Sections 1 through 9 of this document.
 
@@ -1793,7 +1827,6 @@ beneficial ownership of such entity.
 an individual or Legal Entity exercising permissions granted by this License.
 
   
-
 
       "Source" form shall mean the preferred form for making modifications,
 including but not limited to software source code, documentation source, and
@@ -2174,7 +2207,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 Used by:
 
 - `aws-lc-sys` 0.44.0
-- `regorus` 0.11.0
+- `regorus` 0.12.0
 
 <details>
 <summary>Licence text</summary>
@@ -2417,6 +2450,43 @@ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
 WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR
 IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.Apache License
+
+```
+
+</details>
+
+### MIT License
+
+Used by:
+
+- `rataflow` 0.1.0
+
+<details>
+<summary>Licence text</summary>
+
+```
+
+The MIT License (MIT)
+
+Copyright (c) 2026 Furkan Kalaycioglu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ```
 
@@ -2744,7 +2814,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- `mio` 1.2.2
+- `mio` 1.2.3
 
 <details>
 <summary>Licence text</summary>
@@ -2844,7 +2914,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-
 ```
 
 </details>
@@ -2907,7 +2976,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- `uuid` 1.24.1
+- `uuid` 1.26.0
 
 <details>
 <summary>Licence text</summary>
@@ -3023,7 +3092,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- `hyper` 1.11.0
+- `hyper` 1.11.1
 
 <details>
 <summary>Licence text</summary>
@@ -3057,7 +3126,7 @@ THE SOFTWARE.
 
 Used by:
 
-- `either` 1.17.0
+- `either` 1.18.0
 - `itertools` 0.14.0
 - `itertools` 0.15.0
 - `petgraph` 0.8.3
@@ -3490,7 +3559,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-
 ```
 
 </details>
@@ -3855,7 +3923,7 @@ SOFTWARE.
 
 Used by:
 
-- `indexmap` 2.14.0
+- `indexmap` 2.14.1
 
 <details>
 <summary>Licence text</summary>
@@ -4040,7 +4108,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
 
 ```
 
@@ -4669,7 +4736,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-
 ```
 
 </details>
@@ -4679,7 +4745,7 @@ THE SOFTWARE.
 Used by:
 
 - `dirs-sys` 0.5.0
-- `dirs` 6.0.0
+- `dirs` 7.0.0
 
 <details>
 <summary>Licence text</summary>
@@ -4739,7 +4805,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
 
 ```
 
@@ -6081,7 +6146,7 @@ Used by:
 - `is_terminal_polyfill` 1.70.2
 - `once_cell_polyfill` 1.70.2
 - `serde_spanned` 1.1.1
-- `toml` 1.1.4+spec-1.1.0
+- `toml` 1.1.5+spec-1.1.0
 - `toml_datetime` 1.1.1+spec-1.1.0
 - `toml_parser` 1.1.3+spec-1.1.0
 - `toml_writer` 1.1.2+spec-1.1.0
@@ -6385,7 +6450,6 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-
 ```
 
 </details>
@@ -6434,7 +6498,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- `lru` 0.18.2
+- `lru` 0.18.4
 
 <details>
 <summary>Licence text</summary>
@@ -6902,8 +6966,8 @@ SOFTWARE.
 
 Used by:
 
-- `jsonschema` 0.47.0
-- `referencing` 0.47.0
+- `jsonschema` 0.49.9
+- `referencing` 0.49.9
 
 <details>
 <summary>Licence text</summary>
@@ -7118,7 +7182,7 @@ SOFTWARE.
 
 Used by:
 
-- `demand` 2.0.5
+- `demand` 2.1.0
 
 <details>
 <summary>Licence text</summary>
@@ -7261,6 +7325,42 @@ SOFTWARE.
 
 Used by:
 
+- `rust-sugiyama` 0.4.0
+
+<details>
+<summary>Licence text</summary>
+
+```
+MIT License
+
+Copyright (c) 2024 paddison
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+```
+
+</details>
+
+### MIT License
+
+Used by:
+
 - `convert_case` 0.10.0
 
 <details>
@@ -7332,19 +7432,21 @@ SOFTWARE.
 
 Used by:
 
-- `animate-core` 0.4.1
+- `animate-core` 0.7.0
 - `axoupdater` 0.10.2
 - `backtrace-ext` 0.2.1
 - `block2` 0.6.2
 - `chrono` 0.4.45
+- `convert_case` 0.4.0
 - `dispatch2` 0.3.1
-- `jsonschema-regex` 0.47.0
+- `jsonschema-regex` 0.49.9
+- `jsonschema-value` 0.49.9
 - `libm` 0.2.16
 - `minisign-verify` 0.2.5
 - `num-cmp` 0.1.0
 - `objc2-encode` 4.1.0
 - `objc2` 0.6.4
-- `regorus` 0.11.0
+- `regorus` 0.12.0
 - `tree-sitter-cpp` 0.23.4
 - `tree-sitter-java` 0.23.5
 - `tree-sitter-kotlin-ng` 1.1.0
@@ -7352,7 +7454,11 @@ Used by:
 - `tree-sitter-zig` 1.1.2
 - `tui-big-text` 0.8.8
 - `uuid-simd` 0.8.0
+- `verus_builtin` 0.0.0-2026-08-09-0044
+- `verus_builtin_macros` 0.0.0-2026-08-23-0033
+- `verus_state_machines_macros` 0.0.0-2026-08-02-0125
 - `vsimd` 0.8.0
+- `vstd` 0.0.0-2026-08-23-0033
 - `windows-collections` 0.2.0
 - `windows-core` 0.61.2
 - `windows-core` 0.62.2
@@ -7496,7 +7602,6 @@ Copyright 2013-2014 RAD Game Tools and Valve Software
 Copyright 2010-2014 Rich Geldreich and Tenacious Software LLC
 Copyright (c) 2017 Frommi
 Copyright (c) 2017-2024 oyvindln
-
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -7646,6 +7751,7 @@ Used by:
 - `fastrand` 2.5.0
 - `indoc` 2.0.7
 - `itoa` 1.0.18
+- `libyaml-rs` 0.3.0
 - `linux-raw-sys` 0.12.1
 - `once_cell` 1.21.4
 - `pin-project-lite` 0.2.17
@@ -7663,11 +7769,14 @@ Used by:
 - `serde_path_to_error` 0.1.20
 - `serde_yaml` 0.9.34+deprecated
 - `syn` 2.0.119
-- `syn` 3.0.3
+- `syn` 3.0.5
 - `thiserror-impl` 2.0.20
 - `thiserror` 2.0.20
 - `unicode-ident` 1.0.24
 - `unsafe-libyaml` 0.2.11
+- `verus_prettyplease` 0.0.0-2026-08-09-0044
+- `verus_syn` 0.0.0-2026-08-02-0125
+- `yaml_serde` 0.10.7
 - `zmij` 1.0.23
 
 <details>
@@ -7809,7 +7918,7 @@ SOFTWARE
 
 Used by:
 
-- `fancy-regex` 0.18.0
+- `fancy-regex` 0.19.0
 
 <details>
 <summary>Licence text</summary>
@@ -8172,7 +8281,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
 
 ```
 
@@ -8545,7 +8653,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-
 ```
 
 </details>
@@ -8590,8 +8697,8 @@ SOFTWARE.
 
 Used by:
 
-- `tree-sitter-language` 0.1.7
-- `tree-sitter` 0.26.12
+- `tree-sitter-language` 0.1.8
+- `tree-sitter` 0.27.0
 
 <details>
 <summary>Licence text</summary>
@@ -9396,7 +9503,6 @@ the following restrictions:
 
 </details>
 
-
 ---
 
 ## Crate inventory
@@ -9404,13 +9510,13 @@ the following restrictions:
 | Crate | Version | Licence | Source |
 | --- | --- | --- | --- |
 | `miette` | 7.6.0 | Apache License 2.0 | https://github.com/zkat/miette |
-| `eddacraft-tui` | 0.5.0 | Apache License 2.0 | https://github.com/eddacraft/eddacraft-tui |
+| `eddacraft-tui` | 0.5.2 | Apache License 2.0 | https://github.com/eddacraft/eddacraft-tui |
 | `moxcms` | 0.8.1 | Apache License 2.0 | https://github.com/awxkee/moxcms.git |
 | `pxfm` | 0.1.30 | Apache License 2.0 | https://github.com/awxkee/pxfm |
 | `unicode-linebreak` | 0.1.5 | Apache License 2.0 | https://github.com/axelf4/unicode-linebreak |
 | `unicode-general-category` | 1.1.0 | Apache License 2.0 | https://github.com/yeslogic/unicode-general-category |
 | `self-replace` | 1.5.0 | Apache License 2.0 | https://github.com/mitsuhiko/self-replace |
-| `regorus` | 0.11.0 | Apache License 2.0 | https://github.com/microsoft/regorus |
+| `regorus` | 0.12.0 | Apache License 2.0 | https://github.com/microsoft/regorus |
 | `miette-derive` | 7.6.0 | Apache License 2.0 | https://github.com/zkat/miette |
 | `supports-color` | 3.0.2 | Apache License 2.0 | https://github.com/zkat/supports-color |
 | `supports-hyperlinks` | 3.2.0 | Apache License 2.0 | https://github.com/zkat/supports-hyperlinks |
@@ -9423,7 +9529,7 @@ the following restrictions:
 | `matchit` | 0.8.4 | BSD 3-Clause "New" or "Revised" License | https://github.com/ibraheemdev/matchit |
 | `subtle` | 2.6.1 | BSD 3-Clause "New" or "Revised" License | https://github.com/dalek-cryptography/subtle |
 | `aws-lc-sys` | 0.44.0 | BSD 3-Clause "New" or "Revised" License | https://github.com/aws/aws-lc-rs |
-| `regorus` | 0.11.0 | BSD 3-Clause "New" or "Revised" License | https://github.com/microsoft/regorus |
+| `regorus` | 0.12.0 | BSD 3-Clause "New" or "Revised" License | https://github.com/microsoft/regorus |
 | `notify` | 8.2.0 | Creative Commons Zero v1.0 Universal | https://github.com/notify-rs/notify.git |
 | `untrusted` | 0.9.0 | ISC License | https://github.com/briansmith/untrusted |
 | `inotify-sys` | 0.1.8 | ISC License | https://github.com/hannobraun/inotify-sys |
@@ -9432,6 +9538,7 @@ the following restrictions:
 | `aws-lc-rs` | 1.18.0 | ISC License | https://github.com/aws/aws-lc-rs |
 | `aws-lc-sys` | 0.44.0 | ISC License | https://github.com/aws/aws-lc-rs |
 | `is_ci` | 1.2.0 | ISC License | https://github.com/zkat/is_ci |
+| `rataflow` | 0.1.0 | MIT License | https://github.com/furkankly/rataflow |
 | `msvc_spectre_libs` | 0.1.3 | MIT License | https://github.com/microsoft/rust_msvc_spectre_libs |
 | `instability` | 0.3.13 | MIT License | https://github.com/ratatui/instability |
 | `lazy_static` | 1.5.0 | MIT License | https://github.com/rust-lang-nursery/lazy-static.rs |
@@ -9450,7 +9557,7 @@ the following restrictions:
 | `rustc-demangle` | 0.1.28 | MIT License | https://github.com/rust-lang/rustc-demangle |
 | `socket2` | 0.6.5 | MIT License | https://github.com/rust-lang/socket2 |
 | `wait-timeout` | 0.2.1 | MIT License | https://github.com/alexcrichton/wait-timeout |
-| `mio` | 1.2.2 | MIT License | https://github.com/tokio-rs/mio |
+| `mio` | 1.2.3 | MIT License | https://github.com/tokio-rs/mio |
 | `errno` | 0.3.14 | MIT License | https://github.com/lambda-fairy/rust-errno |
 | `mime` | 0.3.17 | MIT License | https://github.com/hyperium/mime |
 | `bitflags` | 2.13.1 | MIT License | https://github.com/bitflags/bitflags |
@@ -9468,12 +9575,12 @@ the following restrictions:
 | `regex-automata` | 0.4.18 | MIT License | https://github.com/rust-lang/regex |
 | `regex-syntax` | 0.8.11 | MIT License | https://github.com/rust-lang/regex |
 | `regex` | 1.13.1 | MIT License | https://github.com/rust-lang/regex |
-| `uuid` | 1.24.1 | MIT License | https://github.com/uuid-rs/uuid |
+| `uuid` | 1.26.0 | MIT License | https://github.com/uuid-rs/uuid |
 | `libsqlite3-sys` | 0.38.2 | MIT License | https://github.com/rusqlite/rusqlite |
 | `rusqlite` | 0.40.2 | MIT License | https://github.com/rusqlite/rusqlite |
 | `flate2` | 1.1.9 | MIT License | https://github.com/rust-lang/flate2-rs |
-| `hyper` | 1.11.0 | MIT License | https://github.com/hyperium/hyper |
-| `either` | 1.17.0 | MIT License | https://github.com/rayon-rs/either |
+| `hyper` | 1.11.1 | MIT License | https://github.com/hyperium/hyper |
+| `either` | 1.18.0 | MIT License | https://github.com/rayon-rs/either |
 | `itertools` | 0.14.0 | MIT License | https://github.com/rust-itertools/itertools |
 | `itertools` | 0.15.0 | MIT License | https://github.com/rust-itertools/itertools |
 | `petgraph` | 0.8.3 | MIT License | https://github.com/petgraph/petgraph |
@@ -9516,7 +9623,7 @@ the following restrictions:
 | `parking_lot_core` | 0.9.12 | MIT License | https://github.com/Amanieu/parking_lot |
 | `thread_local` | 1.1.10 | MIT License | https://github.com/Amanieu/thread_local-rs |
 | `fallible-streaming-iterator` | 0.1.9 | MIT License | https://github.com/sfackler/fallible-streaming-iterator |
-| `indexmap` | 2.14.0 | MIT License | https://github.com/indexmap-rs/indexmap |
+| `indexmap` | 2.14.1 | MIT License | https://github.com/indexmap-rs/indexmap |
 | `equivalent` | 1.0.2 | MIT License | https://github.com/indexmap-rs/equivalent |
 | `addr2line` | 0.25.1 | MIT License | https://github.com/gimli-rs/addr2line |
 | `scopeguard` | 1.2.0 | MIT License | https://github.com/bluss/scopeguard |
@@ -9541,7 +9648,7 @@ the following restrictions:
 | `ahash` | 0.8.12 | MIT License | https://github.com/tkaitchuck/ahash |
 | `want` | 0.3.1 | MIT License | https://github.com/seanmonstar/want |
 | `dirs-sys` | 0.5.0 | MIT License | https://github.com/dirs-dev/dirs-sys-rs |
-| `dirs` | 6.0.0 | MIT License | https://github.com/soc/dirs-rs |
+| `dirs` | 7.0.0 | MIT License | https://codeberg.org/dirs/dirs-rs |
 | `try-lock` | 0.2.5 | MIT License | https://github.com/seanmonstar/try-lock |
 | `block-buffer` | 0.12.1 | MIT License | https://github.com/RustCrypto/utils |
 | `getrandom` | 0.3.4 | MIT License | https://github.com/rust-random/getrandom |
@@ -9600,7 +9707,7 @@ the following restrictions:
 | `is_terminal_polyfill` | 1.70.2 | MIT License | https://github.com/polyfill-rs/is_terminal_polyfill |
 | `once_cell_polyfill` | 1.70.2 | MIT License | https://github.com/polyfill-rs/once_cell_polyfill |
 | `serde_spanned` | 1.1.1 | MIT License | https://github.com/toml-rs/toml |
-| `toml` | 1.1.4+spec-1.1.0 | MIT License | https://github.com/toml-rs/toml |
+| `toml` | 1.1.5+spec-1.1.0 | MIT License | https://github.com/toml-rs/toml |
 | `toml_datetime` | 1.1.1+spec-1.1.0 | MIT License | https://github.com/toml-rs/toml |
 | `toml_parser` | 1.1.3+spec-1.1.0 | MIT License | https://github.com/toml-rs/toml |
 | `toml_writer` | 1.1.2+spec-1.1.0 | MIT License | https://github.com/toml-rs/toml |
@@ -9615,7 +9722,7 @@ the following restrictions:
 | `zerocopy-derive` | 0.8.56 | MIT License | https://github.com/google/zerocopy |
 | `zerocopy` | 0.8.56 | MIT License | https://github.com/google/zerocopy |
 | `utf8_iter` | 1.0.4 | MIT License | https://github.com/hsivonen/utf8_iter |
-| `lru` | 0.18.2 | MIT License | https://github.com/jeromefroe/lru-rs.git |
+| `lru` | 0.18.4 | MIT License | https://github.com/jeromefroe/lru-rs.git |
 | `textwrap` | 0.16.2 | MIT License | https://github.com/mgeisler/textwrap |
 | `font8x8` | 0.3.1 | MIT License | https://gitlab.com/saibatizoku/font8x8-rs |
 | `smawk` | 0.3.3 | MIT License | https://github.com/mgeisler/smawk |
@@ -9635,32 +9742,35 @@ the following restrictions:
 | `tokio-macros` | 2.7.2 | MIT License | https://github.com/tokio-rs/tokio |
 | `axum-core` | 0.5.6 | MIT License | https://github.com/tokio-rs/axum |
 | `owo-colors` | 4.3.0 | MIT License | https://github.com/owo-colors/owo-colors |
-| `jsonschema` | 0.47.0 | MIT License | https://github.com/Stranger6667/jsonschema |
-| `referencing` | 0.47.0 | MIT License | https://github.com/Stranger6667/jsonschema |
+| `jsonschema` | 0.49.9 | MIT License | https://github.com/Stranger6667/jsonschema |
+| `referencing` | 0.49.9 | MIT License | https://github.com/Stranger6667/jsonschema |
 | `compact_str` | 0.9.1 | MIT License | https://github.com/ParkMyCar/compact_str |
 | `castaway` | 0.2.4 | MIT License | https://github.com/sagebind/castaway |
 | `rustls-platform-verifier` | 0.7.0 | MIT License | https://github.com/rustls/rustls-platform-verifier |
 | `matchit` | 0.8.4 | MIT License | https://github.com/ibraheemdev/matchit |
 | `outref` | 0.5.2 | MIT License | https://github.com/Nugine/outref |
-| `demand` | 2.0.5 | MIT License | https://github.com/jdx/demand |
+| `demand` | 2.1.0 | MIT License | https://github.com/jdx/demand |
 | `homedir` | 0.3.6 | MIT License | https://github.com/ljtpetersen/homedir |
 | `line-clipping` | 0.3.8 | MIT License | https://github.com/ratatui/line-clipping |
 | `fluent-uri` | 0.4.1 | MIT License | https://github.com/yescallop/fluent-uri-rs |
+| `rust-sugiyama` | 0.4.0 | MIT License | https://github.com/paddison/rust-sugiyama |
 | `convert_case` | 0.10.0 | MIT License | https://github.com/rutrum/convert-case |
 | `tree-sitter-dart` | 0.2.0 | MIT License | https://github.com/nielsenko/tree-sitter-dart |
-| `animate-core` | 0.4.1 | MIT License | https://github.com/vyfor/animate |
+| `animate-core` | 0.7.0 | MIT License | https://github.com/vyfor/animate |
 | `axoupdater` | 0.10.2 | MIT License | https://github.com/axodotdev/axoupdater |
 | `backtrace-ext` | 0.2.1 | MIT License | https://github.com/gankra/backtrace-ext |
 | `block2` | 0.6.2 | MIT License | https://github.com/madsmtm/objc2 |
 | `chrono` | 0.4.45 | MIT License | https://github.com/chronotope/chrono |
+| `convert_case` | 0.4.0 | MIT License | https://github.com/rutrum/convert-case |
 | `dispatch2` | 0.3.1 | MIT License | https://github.com/madsmtm/objc2 |
-| `jsonschema-regex` | 0.47.0 | MIT License | https://github.com/Stranger6667/jsonschema |
+| `jsonschema-regex` | 0.49.9 | MIT License | https://github.com/Stranger6667/jsonschema |
+| `jsonschema-value` | 0.49.9 | MIT License | https://github.com/Stranger6667/jsonschema |
 | `libm` | 0.2.16 | MIT License | https://github.com/rust-lang/compiler-builtins |
 | `minisign-verify` | 0.2.5 | MIT License | https://github.com/jedisct1/rust-minisign-verify |
 | `num-cmp` | 0.1.0 | MIT License | https://github.com/lifthrasiir/num-cmp |
 | `objc2-encode` | 4.1.0 | MIT License | https://github.com/madsmtm/objc2 |
 | `objc2` | 0.6.4 | MIT License | https://github.com/madsmtm/objc2 |
-| `regorus` | 0.11.0 | MIT License | https://github.com/microsoft/regorus |
+| `regorus` | 0.12.0 | MIT License | https://github.com/microsoft/regorus |
 | `tree-sitter-cpp` | 0.23.4 | MIT License | https://github.com/tree-sitter/tree-sitter-cpp |
 | `tree-sitter-java` | 0.23.5 | MIT License | https://github.com/tree-sitter/tree-sitter-java |
 | `tree-sitter-kotlin-ng` | 1.1.0 | MIT License | https://github.com/tree-sitter-grammars/tree-sitter-kotlin |
@@ -9668,7 +9778,11 @@ the following restrictions:
 | `tree-sitter-zig` | 1.1.2 | MIT License | https://github.com/tree-sitter-grammars/tree-sitter-zig |
 | `tui-big-text` | 0.8.8 | MIT License | https://github.com/ratatui/tui-widgets |
 | `uuid-simd` | 0.8.0 | MIT License | https://github.com/Nugine/simd |
+| `verus_builtin` | 0.0.0-2026-08-09-0044 | MIT License | https://github.com/verus-lang/verus |
+| `verus_builtin_macros` | 0.0.0-2026-08-23-0033 | MIT License | https://github.com/verus-lang/verus |
+| `verus_state_machines_macros` | 0.0.0-2026-08-02-0125 | MIT License | https://github.com/verus-lang/verus |
 | `vsimd` | 0.8.0 | MIT License | https://github.com/Nugine/simd |
+| `vstd` | 0.0.0-2026-08-23-0033 | MIT License | https://github.com/verus-lang/verus |
 | `windows-collections` | 0.2.0 | MIT License | https://github.com/microsoft/windows-rs |
 | `windows-core` | 0.61.2 | MIT License | https://github.com/microsoft/windows-rs |
 | `windows-core` | 0.62.2 | MIT License | https://github.com/microsoft/windows-rs |
@@ -9714,6 +9828,7 @@ the following restrictions:
 | `fastrand` | 2.5.0 | MIT License | https://github.com/smol-rs/fastrand |
 | `indoc` | 2.0.7 | MIT License | https://github.com/dtolnay/indoc |
 | `itoa` | 1.0.18 | MIT License | https://github.com/dtolnay/itoa |
+| `libyaml-rs` | 0.3.0 | MIT License | https://github.com/yaml/libyaml-rs |
 | `linux-raw-sys` | 0.12.1 | MIT License | https://github.com/sunfishcode/linux-raw-sys |
 | `once_cell` | 1.21.4 | MIT License | https://github.com/matklad/once_cell |
 | `pin-project-lite` | 0.2.17 | MIT License | https://github.com/taiki-e/pin-project-lite |
@@ -9731,16 +9846,19 @@ the following restrictions:
 | `serde_path_to_error` | 0.1.20 | MIT License | https://github.com/dtolnay/path-to-error |
 | `serde_yaml` | 0.9.34+deprecated | MIT License | https://github.com/dtolnay/serde-yaml |
 | `syn` | 2.0.119 | MIT License | https://github.com/dtolnay/syn |
-| `syn` | 3.0.3 | MIT License | https://github.com/dtolnay/syn |
+| `syn` | 3.0.5 | MIT License | https://github.com/dtolnay/syn |
 | `thiserror-impl` | 2.0.20 | MIT License | https://github.com/dtolnay/thiserror |
 | `thiserror` | 2.0.20 | MIT License | https://github.com/dtolnay/thiserror |
 | `unicode-ident` | 1.0.24 | MIT License | https://github.com/dtolnay/unicode-ident |
 | `unsafe-libyaml` | 0.2.11 | MIT License | https://github.com/dtolnay/unsafe-libyaml |
+| `verus_prettyplease` | 0.0.0-2026-08-09-0044 | MIT License | https://github.com/dtolnay/prettyplease |
+| `verus_syn` | 0.0.0-2026-08-02-0125 | MIT License | https://github.com/dtolnay/syn |
+| `yaml_serde` | 0.10.7 | MIT License | https://github.com/yaml/yaml-serde |
 | `zmij` | 1.0.23 | MIT License | https://github.com/dtolnay/zmij |
 | `allocator-api2` | 0.2.21 | MIT License | https://github.com/zakarumych/allocator-api2 |
 | `winnow` | 1.0.4 | MIT License | https://github.com/winnow-rs/winnow |
 | `encode_unicode` | 1.0.0 | MIT License | https://github.com/tormol/encode_unicode |
-| `fancy-regex` | 0.18.0 | MIT License | https://github.com/fancy-regex/fancy-regex |
+| `fancy-regex` | 0.19.0 | MIT License | https://github.com/fancy-regex/fancy-regex |
 | `spin` | 0.12.2 | MIT License | https://codeberg.org/zesterer/spin |
 | `spin` | 0.9.9 | MIT License | https://github.com/mvdnes/spin-rs.git |
 | `tree-sitter-c` | 0.24.2 | MIT License | https://github.com/tree-sitter/tree-sitter-c |
@@ -9780,8 +9898,8 @@ the following restrictions:
 | `winapi-util` | 0.1.11 | MIT License | https://github.com/BurntSushi/winapi-util |
 | `console` | 0.16.4 | MIT License | https://github.com/console-rs/console |
 | `tree-sitter-rust` | 0.24.2 | MIT License | https://github.com/tree-sitter/tree-sitter-rust |
-| `tree-sitter-language` | 0.1.7 | MIT License | https://github.com/tree-sitter/tree-sitter |
-| `tree-sitter` | 0.26.12 | MIT License | https://github.com/tree-sitter/tree-sitter |
+| `tree-sitter-language` | 0.1.8 | MIT License | https://github.com/tree-sitter/tree-sitter |
+| `tree-sitter` | 0.27.0 | MIT License | https://github.com/tree-sitter/tree-sitter |
 | `bstr` | 1.13.1 | MIT License | https://github.com/BurntSushi/bstr |
 | `fuzzy-matcher` | 0.3.7 | MIT License | https://github.com/lotabout/fuzzy-matcher |
 | `crossbeam-deque` | 0.8.7 | MIT License | https://github.com/crossbeam-rs/crossbeam |
@@ -9831,17 +9949,18 @@ section above; this block focuses on the build-time runtime surface.
 | @emnapi/runtime | 1.4.5 | MIT | https://github.com/toyobayashi/emnapi |
 | @emnapi/wasi-threads | 1.0.4 | MIT | https://github.com/toyobayashi/emnapi |
 | @jest/diff-sequences | 30.0.1 | MIT | https://github.com/jestjs/jest |
-| @jridgewell/sourcemap-codec | 1.5.5 | MIT | https://github.com/jridgewell/sourcemaps |
+| @jridgewell/sourcemap-codec | 1.6.0 | MIT | https://github.com/jridgewell/sourcemaps |
 | @napi-rs/wasm-runtime | 0.2.4 | MIT | https://github.com/napi-rs/napi-rs |
-| @nx/nx-linux-x64-gnu | 22.7.8 | MIT | https://github.com/nrwl/nx |
-| @oxc-project/types | 0.133.0 | MIT | https://github.com/oxc-project/oxc |
+| @nx/nx-linux-x64-gnu | 22.7.9 | MIT | https://github.com/nrwl/nx |
+| @nx/nx-linux-x64-musl | 22.7.9 | MIT | https://github.com/nrwl/nx |
+| @oxc-project/types | 0.148.0 | MIT | https://github.com/oxc-project/oxc |
 | @oxfmt/binding-linux-x64-gnu | 0.53.0 | MIT | https://github.com/oxc-project/oxc |
 | @oxfmt/binding-linux-x64-musl | 0.53.0 | MIT | https://github.com/oxc-project/oxc |
 | @oxlint/binding-linux-x64-gnu | 1.68.0 | MIT | https://github.com/oxc-project/oxc |
 | @oxlint/binding-linux-x64-musl | 1.68.0 | MIT | https://github.com/oxc-project/oxc |
 | @playwright/test | 1.60.0 | Apache-2.0 | https://github.com/microsoft/playwright |
-| @rolldown/binding-linux-x64-gnu | 1.0.3 | MIT | https://github.com/rolldown/rolldown |
-| @rolldown/binding-linux-x64-musl | 1.0.3 | MIT | https://github.com/rolldown/rolldown |
+| @rolldown/binding-linux-x64-gnu | 1.2.7 | MIT | https://github.com/rolldown/rolldown |
+| @rolldown/binding-linux-x64-musl | 1.2.7 | MIT | https://github.com/rolldown/rolldown |
 | @rolldown/pluginutils | 1.0.1 | MIT | https://github.com/rolldown/plugins |
 | @standard-schema/spec | 1.1.0 | MIT | https://github.com/standard-schema/standard-schema |
 | @tybys/wasm-util | 0.9.0 | MIT | https://github.com/toyobayashi/wasm-util |
@@ -9852,13 +9971,13 @@ section above; this block focuses on the build-time runtime surface.
 | @types/katex | 0.16.8 | MIT | https://github.com/DefinitelyTyped/DefinitelyTyped |
 | @types/ms | 2.1.0 | MIT | https://github.com/DefinitelyTyped/DefinitelyTyped |
 | @types/unist | 2.0.11 | MIT | https://github.com/DefinitelyTyped/DefinitelyTyped |
-| @vitest/expect | 4.1.8 | MIT | https://github.com/vitest-dev/vitest |
-| @vitest/mocker | 4.1.8 | MIT | https://github.com/vitest-dev/vitest |
-| @vitest/pretty-format | 4.1.8 | MIT | https://github.com/vitest-dev/vitest |
-| @vitest/runner | 4.1.8 | MIT | https://github.com/vitest-dev/vitest |
-| @vitest/snapshot | 4.1.8 | MIT | https://github.com/vitest-dev/vitest |
-| @vitest/spy | 4.1.8 | MIT | https://github.com/vitest-dev/vitest |
-| @vitest/utils | 4.1.8 | MIT | https://github.com/vitest-dev/vitest |
+| @vitest/expect | 4.1.11 | MIT | https://github.com/vitest-dev/vitest |
+| @vitest/mocker | 4.1.11 | MIT | https://github.com/vitest-dev/vitest |
+| @vitest/pretty-format | 4.1.11 | MIT | https://github.com/vitest-dev/vitest |
+| @vitest/runner | 4.1.11 | MIT | https://github.com/vitest-dev/vitest |
+| @vitest/snapshot | 4.1.11 | MIT | https://github.com/vitest-dev/vitest |
+| @vitest/spy | 4.1.11 | MIT | https://github.com/vitest-dev/vitest |
+| @vitest/utils | 4.1.11 | MIT | https://github.com/vitest-dev/vitest |
 | @yarnpkg/lockfile | 1.1.0 | BSD-2-Clause | https://github.com/yarnpkg/yarn/blob/master/packages/lockfile |
 | @zkochan/js-yaml | 0.0.7 | MIT | https://github.com/nodeca/js-yaml |
 | abbrev | 1.1.1 | ISC | https://github.com/isaacs/abbrev-js |
@@ -9873,7 +9992,7 @@ section above; this block focuses on the build-time runtime surface.
 | asap | 2.0.6 | MIT | https://github.com/kriskowal/asap |
 | assertion-error | 2.0.1 | MIT | https://github.com/chaijs/assertion-error |
 | asynckit | 0.4.0 | MIT | https://github.com/alexindigo/asynckit |
-| axios | 1.18.1 | MIT | https://github.com/axios/axios |
+| axios | 1.20.0 | MIT | https://github.com/axios/axios |
 | balanced-match | 1.0.2 | MIT | https://github.com/juliangruber/balanced-match |
 | balanced-match | 4.0.3 | MIT | https://github.com/juliangruber/balanced-match |
 | balanced-match | 4.0.4 | MIT | https://github.com/juliangruber/balanced-match |
@@ -9950,7 +10069,6 @@ section above; this block focuses on the build-time runtime surface.
 | has-flag | 4.0.0 | MIT | https://github.com/sindresorhus/has-flag |
 | has-symbols | 1.1.0 | MIT | https://github.com/inspect-js/has-symbols |
 | has-tostringtag | 1.0.2 | MIT | https://github.com/inspect-js/has-tostringtag |
-| hasown | 2.0.2 | MIT | https://github.com/inspect-js/hasOwn |
 | hasown | 2.0.3 | MIT | https://github.com/inspect-js/hasOwn |
 | hasown | 2.0.4 | MIT | https://github.com/inspect-js/hasOwn |
 | hosted-git-info | 2.8.9 | ISC | https://github.com/npm/hosted-git-info |
@@ -9971,7 +10089,7 @@ section above; this block focuses on the build-time runtime surface.
 | is-interactive | 1.0.0 | MIT | https://github.com/sindresorhus/is-interactive |
 | is-unicode-supported | 0.1.0 | MIT | https://github.com/sindresorhus/is-unicode-supported |
 | is-wsl | 2.2.0 | MIT | https://github.com/sindresorhus/is-wsl |
-| js-yaml | 4.3.1 | MIT | https://github.com/nodeca/js-yaml |
+| js-yaml | 4.3.2 | MIT | https://github.com/nodeca/js-yaml |
 | json-parse-even-better-errors | 2.3.1 | MIT | https://github.com/npm/json-parse-even-better-errors |
 | json5 | 2.2.3 | MIT | https://github.com/json5/json5 |
 | jsonc-parser | 3.2.0 | MIT | https://github.com/microsoft/node-jsonc-parser |
@@ -9979,9 +10097,9 @@ section above; this block focuses on the build-time runtime surface.
 | jsonpointer | 5.0.1 | MIT | https://github.com/janl/node-jsonpointer |
 | katex | 0.16.47 | MIT | https://github.com/KaTeX/KaTeX |
 | license-checker | 25.0.1 | BSD-3-Clause | https://github.com/davglass/license-checker |
-| lightningcss-linux-x64-gnu | 1.32.0 | MPL-2.0 | https://github.com/parcel-bundler/lightningcss |
-| lightningcss-linux-x64-musl | 1.32.0 | MPL-2.0 | https://github.com/parcel-bundler/lightningcss |
-| lightningcss | 1.32.0 | MPL-2.0 | https://github.com/parcel-bundler/lightningcss |
+| lightningcss-linux-x64-gnu | 1.33.0 | MPL-2.0 | https://github.com/parcel-bundler/lightningcss |
+| lightningcss-linux-x64-musl | 1.33.0 | MPL-2.0 | https://github.com/parcel-bundler/lightningcss |
+| lightningcss | 1.33.0 | MPL-2.0 | https://github.com/parcel-bundler/lightningcss |
 | lines-and-columns | 2.0.3 | MIT | https://github.com/eventualbuddha/lines-and-columns |
 | linkify-it | 5.0.2 | MIT | https://github.com/markdown-it/linkify-it |
 | log-symbols | 4.1.0 | MIT | https://github.com/sindresorhus/log-symbols |
@@ -10029,7 +10147,7 @@ section above; this block focuses on the build-time runtime surface.
 | normalize-package-data | 2.5.0 | BSD-2-Clause | https://github.com/npm/normalize-package-data |
 | npm-normalize-package-bin | 1.0.1 | ISC | https://github.com/npm/npm-normalize-package-bin |
 | npm-run-path | 4.0.1 | MIT | https://github.com/sindresorhus/npm-run-path |
-| nx | 22.7.8 | MIT | https://github.com/nrwl/nx |
+| nx | 22.7.9 | MIT | https://github.com/nrwl/nx |
 | obug | 2.1.1 | MIT | https://github.com/sxzz/obug |
 | once | 1.4.0 | ISC | https://github.com/isaacs/once |
 | onetime | 5.1.2 | MIT | https://github.com/sindresorhus/onetime |
@@ -10046,10 +10164,10 @@ section above; this block focuses on the build-time runtime surface.
 | path-parse | 1.0.7 | MIT | https://github.com/jbgutierrez/path-parse |
 | pathe | 2.0.3 | MIT | https://github.com/unjs/pathe |
 | picocolors | 1.1.1 | ISC | https://github.com/alexeyraspopov/picocolors |
-| picomatch | 4.0.4 | MIT | https://github.com/micromatch/picomatch |
+| picomatch | 4.0.7 | MIT | https://github.com/micromatch/picomatch |
 | playwright-core | 1.60.0 | Apache-2.0 | https://github.com/microsoft/playwright |
 | playwright | 1.60.0 | Apache-2.0 | https://github.com/microsoft/playwright |
-| postcss | 8.5.23 | MIT | https://github.com/postcss/postcss |
+| postcss | 8.5.26 | MIT | https://github.com/postcss/postcss |
 | proxy-from-env | 2.1.0 | MIT | https://github.com/Rob--W/proxy-from-env |
 | punycode.js | 2.3.1 | MIT | https://github.com/mathiasbynens/punycode.js |
 | read-installed | 4.0.3 | ISC | https://github.com/isaacs/read-installed |
@@ -10060,7 +10178,7 @@ section above; this block focuses on the build-time runtime surface.
 | resolve.exports | 2.0.3 | MIT | https://github.com/lukeed/resolve.exports |
 | resolve | 1.22.12 | MIT | https://github.com/browserify/resolve |
 | restore-cursor | 3.1.0 | MIT | https://github.com/sindresorhus/restore-cursor |
-| rolldown | 1.0.3 | MIT | https://github.com/rolldown/rolldown |
+| rolldown | 1.2.7 | MIT | https://github.com/rolldown/rolldown |
 | run-con | 1.3.2 | (BSD-2-Clause OR MIT OR Apache-2.0) | https://github.com/goatandsheep/rc |
 | safe-buffer | 5.2.1 | MIT | https://github.com/feross/safe-buffer |
 | semver | 5.7.2 | ISC | https://github.com/npm/node-semver |
@@ -10068,7 +10186,7 @@ section above; this block focuses on the build-time runtime surface.
 | siginfo | 2.0.0 | ISC | https://github.com/emilbayes/siginfo |
 | signal-exit | 3.0.7 | ISC | https://github.com/tapjs/signal-exit |
 | slide | 1.1.6 | ISC | https://github.com/isaacs/slide-flow-control |
-| smol-toml | 1.6.1 | BSD-3-Clause | https://github.com/squirrelchat/smol-toml |
+| smol-toml | 1.7.2 | BSD-3-Clause | https://github.com/squirrelchat/smol-toml |
 | source-map-js | 1.2.1 | BSD-3-Clause | https://github.com/7rulnik/source-map-js |
 | spdx-compare | 1.0.0 | MIT | https://github.com/kemitchell/spdx-compare.js |
 | spdx-correct | 3.2.0 | Apache-2.0 | https://github.com/jslicense/spdx-correct.js |
@@ -10094,7 +10212,7 @@ section above; this block focuses on the build-time runtime surface.
 | tinyexec | 1.2.2 | MIT | https://github.com/tinylibs/tinyexec |
 | tinyglobby | 0.2.17 | MIT | https://github.com/SuperchupuDev/tinyglobby |
 | tinypool | 2.1.0 | MIT | https://github.com/tinylibs/tinypool |
-| tinyrainbow | 3.1.0 | MIT | https://github.com/tinylibs/tinyrainbow |
+| tinyrainbow | 3.1.1 | MIT | https://github.com/tinylibs/tinyrainbow |
 | tmp | 0.2.7 | MIT | https://github.com/raszi/node-tmp |
 | tree-kill | 1.2.2 | MIT | https://github.com/pkrumins/node-tree-kill |
 | treeify | 1.1.0 | MIT | https://github.com/notatestuser/treeify |
@@ -10105,8 +10223,8 @@ section above; this block focuses on the build-time runtime surface.
 | util-deprecate | 1.0.2 | MIT | https://github.com/TooTallNate/util-deprecate |
 | util-extend | 1.0.3 | MIT | https://github.com/isaacs/util-extend |
 | validate-npm-package-license | 3.0.4 | Apache-2.0 | https://github.com/kemitchell/validate-npm-package-license.js |
-| vite | 8.0.16 | MIT | https://github.com/vitejs/vite |
-| vitest | 4.1.8 | MIT | https://github.com/vitest-dev/vitest |
+| vite | 8.2.2 | MIT | https://github.com/vitejs/vite |
+| vitest | 4.1.11 | MIT | https://github.com/vitest-dev/vitest |
 | wcwidth | 1.0.1 | MIT | https://github.com/timoxley/wcwidth |
 | why-is-node-running | 2.3.0 | MIT | https://github.com/mafintosh/why-is-node-running |
 | wrap-ansi | 7.0.0 | MIT | https://github.com/chalk/wrap-ansi |
