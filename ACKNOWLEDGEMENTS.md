@@ -197,7 +197,7 @@ named in the crate source linked from the inventory table.
 
 ## Licence summary
 
-- **MIT License** — 368 crates
+- **MIT License** — 374 crates
 - **Unicode License v3** — 19 crates
 - **Apache License 2.0** — 17 crates
 - **ISC License** — 7 crates
@@ -430,7 +430,7 @@ Used by:
 
 Used by:
 
-- `eddacraft-tui` 0.5.2
+- `eddacraft-tui` 0.5.3
 
 <details>
 <summary>Licence text</summary>
@@ -2976,7 +2976,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- `uuid` 1.26.0
+- `uuid` 1.26.1
 
 <details>
 <summary>Licence text</summary>
@@ -3255,6 +3255,7 @@ Used by:
 - `unicode-segmentation` 1.13.3
 - `unicode-width` 0.1.14
 - `unicode-width` 0.2.2
+- `unicode-xid` 0.2.6
 
 <details>
 <summary>Licence text</summary>
@@ -4083,7 +4084,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- `reqwest` 0.13.4
+- `reqwest` 0.13.5
 
 <details>
 <summary>Licence text</summary>
@@ -4630,7 +4631,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- `smallvec` 1.15.2
+- `smallvec` 1.16.1
 
 <details>
 <summary>Licence text</summary>
@@ -6146,7 +6147,7 @@ Used by:
 - `is_terminal_polyfill` 1.70.2
 - `once_cell_polyfill` 1.70.2
 - `serde_spanned` 1.1.1
-- `toml` 1.1.5+spec-1.1.0
+- `toml` 1.1.6+spec-1.1.0
 - `toml_datetime` 1.1.1+spec-1.1.0
 - `toml_parser` 1.1.3+spec-1.1.0
 - `toml_writer` 1.1.2+spec-1.1.0
@@ -6417,8 +6418,8 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- `zerocopy-derive` 0.8.56
-- `zerocopy` 0.8.56
+- `zerocopy-derive` 0.8.57
+- `zerocopy` 0.8.57
 
 <details>
 <summary>Licence text</summary>
@@ -6770,6 +6771,43 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice (including the next paragraph) shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+```
+
+</details>
+
+### MIT License
+
+Used by:
+
+- `schemars` 1.2.2
+- `schemars_derive` 1.2.2
+
+<details>
+<summary>Licence text</summary>
+
+```
+MIT License
+
+Copyright (c) 2019 Graham Esau
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ```
 
@@ -7748,6 +7786,7 @@ Used by:
 - `camino` 1.2.5
 - `ctrlc` 3.5.2
 - `displaydoc` 0.2.7
+- `dyn-clone` 1.0.20
 - `fastrand` 2.5.0
 - `indoc` 2.0.7
 - `itoa` 1.0.18
@@ -7765,6 +7804,7 @@ Used by:
 - `serde` 1.0.229
 - `serde_core` 1.0.229
 - `serde_derive` 1.0.229
+- `serde_derive_internals` 0.30.0
 - `serde_json` 1.0.151
 - `serde_path_to_error` 0.1.20
 - `serde_yaml` 0.9.34+deprecated
@@ -8625,7 +8665,7 @@ THE SOFTWARE.
 
 Used by:
 
-- `console` 0.16.4
+- `console` 0.16.6
 
 <details>
 <summary>Licence text</summary>
@@ -8808,7 +8848,7 @@ Used by:
 
 - `crossbeam-deque` 0.8.7
 - `crossbeam-epoch` 0.9.20
-- `crossbeam-utils` 0.8.22
+- `crossbeam-utils` 0.8.23
 
 <details>
 <summary>Licence text</summary>
@@ -8841,6 +8881,42 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
+
+```
+
+</details>
+
+### MIT License
+
+Used by:
+
+- `base64` 0.23.1
+
+<details>
+<summary>Licence text</summary>
+
+```
+The MIT License (MIT)
+
+Copyright (c) 2025 Alice Maz, Marshall Pierce
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 
 ```
 
@@ -9510,7 +9586,7 @@ the following restrictions:
 | Crate | Version | Licence | Source |
 | --- | --- | --- | --- |
 | `miette` | 7.6.0 | Apache License 2.0 | https://github.com/zkat/miette |
-| `eddacraft-tui` | 0.5.2 | Apache License 2.0 | https://github.com/eddacraft/eddacraft-tui |
+| `eddacraft-tui` | 0.5.3 | Apache License 2.0 | https://github.com/eddacraft/eddacraft-tui |
 | `moxcms` | 0.8.1 | Apache License 2.0 | https://github.com/awxkee/moxcms.git |
 | `pxfm` | 0.1.30 | Apache License 2.0 | https://github.com/awxkee/pxfm |
 | `unicode-linebreak` | 0.1.5 | Apache License 2.0 | https://github.com/axelf4/unicode-linebreak |
@@ -9575,7 +9651,7 @@ the following restrictions:
 | `regex-automata` | 0.4.18 | MIT License | https://github.com/rust-lang/regex |
 | `regex-syntax` | 0.8.11 | MIT License | https://github.com/rust-lang/regex |
 | `regex` | 1.13.1 | MIT License | https://github.com/rust-lang/regex |
-| `uuid` | 1.26.0 | MIT License | https://github.com/uuid-rs/uuid |
+| `uuid` | 1.26.1 | MIT License | https://github.com/uuid-rs/uuid |
 | `libsqlite3-sys` | 0.38.2 | MIT License | https://github.com/rusqlite/rusqlite |
 | `rusqlite` | 0.40.2 | MIT License | https://github.com/rusqlite/rusqlite |
 | `flate2` | 1.1.9 | MIT License | https://github.com/rust-lang/flate2-rs |
@@ -9592,6 +9668,7 @@ the following restrictions:
 | `unicode-segmentation` | 1.13.3 | MIT License | https://github.com/unicode-rs/unicode-segmentation |
 | `unicode-width` | 0.1.14 | MIT License | https://github.com/unicode-rs/unicode-width |
 | `unicode-width` | 0.2.2 | MIT License | https://github.com/unicode-rs/unicode-width |
+| `unicode-xid` | 0.2.6 | MIT License | https://github.com/unicode-rs/unicode-xid |
 | `cobs` | 0.3.0 | MIT License | https://github.com/jamesmunns/cobs.rs |
 | `fallible-iterator` | 0.3.0 | MIT License | https://github.com/sfackler/rust-fallible-iterator |
 | `terminal_size` | 0.4.4 | MIT License | https://github.com/eminence/terminal-size |
@@ -9627,7 +9704,7 @@ the following restrictions:
 | `equivalent` | 1.0.2 | MIT License | https://github.com/indexmap-rs/equivalent |
 | `addr2line` | 0.25.1 | MIT License | https://github.com/gimli-rs/addr2line |
 | `scopeguard` | 1.2.0 | MIT License | https://github.com/bluss/scopeguard |
-| `reqwest` | 0.13.4 | MIT License | https://github.com/seanmonstar/reqwest |
+| `reqwest` | 0.13.5 | MIT License | https://github.com/seanmonstar/reqwest |
 | `sha2` | 0.11.0 | MIT License | https://github.com/RustCrypto/hashes |
 | `fnv` | 1.0.7 | MIT License | https://github.com/servo/rust-fnv |
 | `memoffset` | 0.9.1 | MIT License | https://github.com/Gilnaa/memoffset |
@@ -9644,7 +9721,7 @@ the following restrictions:
 | `digest` | 0.11.3 | MIT License | https://github.com/RustCrypto/traits |
 | `bytes` | 1.12.1 | MIT License | https://github.com/tokio-rs/bytes |
 | `hash32` | 0.2.1 | MIT License | https://github.com/japaric/hash32 |
-| `smallvec` | 1.15.2 | MIT License | https://github.com/servo/rust-smallvec |
+| `smallvec` | 1.16.1 | MIT License | https://github.com/servo/rust-smallvec |
 | `ahash` | 0.8.12 | MIT License | https://github.com/tkaitchuck/ahash |
 | `want` | 0.3.1 | MIT License | https://github.com/seanmonstar/want |
 | `dirs-sys` | 0.5.0 | MIT License | https://github.com/dirs-dev/dirs-sys-rs |
@@ -9707,7 +9784,7 @@ the following restrictions:
 | `is_terminal_polyfill` | 1.70.2 | MIT License | https://github.com/polyfill-rs/is_terminal_polyfill |
 | `once_cell_polyfill` | 1.70.2 | MIT License | https://github.com/polyfill-rs/once_cell_polyfill |
 | `serde_spanned` | 1.1.1 | MIT License | https://github.com/toml-rs/toml |
-| `toml` | 1.1.5+spec-1.1.0 | MIT License | https://github.com/toml-rs/toml |
+| `toml` | 1.1.6+spec-1.1.0 | MIT License | https://github.com/toml-rs/toml |
 | `toml_datetime` | 1.1.1+spec-1.1.0 | MIT License | https://github.com/toml-rs/toml |
 | `toml_parser` | 1.1.3+spec-1.1.0 | MIT License | https://github.com/toml-rs/toml |
 | `toml_writer` | 1.1.2+spec-1.1.0 | MIT License | https://github.com/toml-rs/toml |
@@ -9719,8 +9796,8 @@ the following restrictions:
 | `synstructure` | 0.13.2 | MIT License | https://github.com/mystor/synstructure |
 | `ipnet` | 2.12.1 | MIT License | https://github.com/krisprice/ipnet |
 | `rand` | 0.10.2 | MIT License | https://github.com/rust-random/rand |
-| `zerocopy-derive` | 0.8.56 | MIT License | https://github.com/google/zerocopy |
-| `zerocopy` | 0.8.56 | MIT License | https://github.com/google/zerocopy |
+| `zerocopy-derive` | 0.8.57 | MIT License | https://github.com/google/zerocopy |
+| `zerocopy` | 0.8.57 | MIT License | https://github.com/google/zerocopy |
 | `utf8_iter` | 1.0.4 | MIT License | https://github.com/hsivonen/utf8_iter |
 | `lru` | 0.18.4 | MIT License | https://github.com/jeromefroe/lru-rs.git |
 | `textwrap` | 0.16.2 | MIT License | https://github.com/mgeisler/textwrap |
@@ -9736,6 +9813,8 @@ the following restrictions:
 | `crc32fast` | 1.5.0 | MIT License | https://github.com/srijs/rust-crc32fast |
 | `bytemuck` | 1.25.2 | MIT License | https://github.com/Lokathor/bytemuck |
 | `bytemuck_derive` | 1.12.0 | MIT License | https://github.com/Lokathor/bytemuck |
+| `schemars` | 1.2.2 | MIT License | https://github.com/GREsau/schemars |
+| `schemars_derive` | 1.2.2 | MIT License | https://github.com/GREsau/schemars |
 | `strum` | 0.28.0 | MIT License | https://github.com/Peternator7/strum |
 | `strum_macros` | 0.28.0 | MIT License | https://github.com/Peternator7/strum |
 | `email_address` | 0.2.9 | MIT License | https://github.com/johnstonskj/rust-email_address.git |
@@ -9825,6 +9904,7 @@ the following restrictions:
 | `camino` | 1.2.5 | MIT License | https://github.com/camino-rs/camino |
 | `ctrlc` | 3.5.2 | MIT License | https://github.com/Detegr/rust-ctrlc.git |
 | `displaydoc` | 0.2.7 | MIT License | https://github.com/yaahc/displaydoc |
+| `dyn-clone` | 1.0.20 | MIT License | https://github.com/dtolnay/dyn-clone |
 | `fastrand` | 2.5.0 | MIT License | https://github.com/smol-rs/fastrand |
 | `indoc` | 2.0.7 | MIT License | https://github.com/dtolnay/indoc |
 | `itoa` | 1.0.18 | MIT License | https://github.com/dtolnay/itoa |
@@ -9842,6 +9922,7 @@ the following restrictions:
 | `serde` | 1.0.229 | MIT License | https://github.com/serde-rs/serde |
 | `serde_core` | 1.0.229 | MIT License | https://github.com/serde-rs/serde |
 | `serde_derive` | 1.0.229 | MIT License | https://github.com/serde-rs/serde |
+| `serde_derive_internals` | 0.30.0 | MIT License | https://github.com/serde-rs/serde |
 | `serde_json` | 1.0.151 | MIT License | https://github.com/serde-rs/json |
 | `serde_path_to_error` | 0.1.20 | MIT License | https://github.com/dtolnay/path-to-error |
 | `serde_yaml` | 0.9.34+deprecated | MIT License | https://github.com/dtolnay/serde-yaml |
@@ -9896,7 +9977,7 @@ the following restrictions:
 | `ratatui` | 0.30.2 | MIT License | https://github.com/ratatui/ratatui |
 | `same-file` | 1.0.6 | MIT License | https://github.com/BurntSushi/same-file |
 | `winapi-util` | 0.1.11 | MIT License | https://github.com/BurntSushi/winapi-util |
-| `console` | 0.16.4 | MIT License | https://github.com/console-rs/console |
+| `console` | 0.16.6 | MIT License | https://github.com/console-rs/console |
 | `tree-sitter-rust` | 0.24.2 | MIT License | https://github.com/tree-sitter/tree-sitter-rust |
 | `tree-sitter-language` | 0.1.8 | MIT License | https://github.com/tree-sitter/tree-sitter |
 | `tree-sitter` | 0.27.0 | MIT License | https://github.com/tree-sitter/tree-sitter |
@@ -9904,7 +9985,8 @@ the following restrictions:
 | `fuzzy-matcher` | 0.3.7 | MIT License | https://github.com/lotabout/fuzzy-matcher |
 | `crossbeam-deque` | 0.8.7 | MIT License | https://github.com/crossbeam-rs/crossbeam |
 | `crossbeam-epoch` | 0.9.20 | MIT License | https://github.com/crossbeam-rs/crossbeam |
-| `crossbeam-utils` | 0.8.22 | MIT License | https://github.com/crossbeam-rs/crossbeam |
+| `crossbeam-utils` | 0.8.23 | MIT License | https://github.com/crossbeam-rs/crossbeam |
+| `base64` | 0.23.1 | MIT License | https://github.com/marshallpierce/rust-base64 |
 | `hashlink` | 0.12.1 | MIT License | https://github.com/djc/hashlink |
 | `borrow-or-share` | 0.2.4 | MIT No Attribution | https://github.com/yescallop/borrow-or-share |
 | `dunce` | 1.0.5 | MIT No Attribution | https://gitlab.com/kornelski/dunce |
