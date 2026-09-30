@@ -10080,8 +10080,8 @@ section above; this block focuses on the build-time runtime surface.
 | balanced-match | 4.0.4 | MIT | https://github.com/juliangruber/balanced-match |
 | base64-js | 1.5.1 | MIT | https://github.com/beatgammit/base64-js |
 | bl | 4.1.0 | MIT | https://github.com/rvagg/bl |
-| brace-expansion | 1.1.18 | MIT | https://github.com/juliangruber/brace-expansion |
-| brace-expansion | 5.0.9 | MIT | https://github.com/juliangruber/brace-expansion |
+| brace-expansion | 1.1.21 | MIT | https://github.com/juliangruber/brace-expansion |
+| brace-expansion | 5.0.12 | MIT | https://github.com/juliangruber/brace-expansion |
 | buffer | 5.7.1 | MIT | https://github.com/feross/buffer |
 | call-bind-apply-helpers | 1.0.2 | MIT | https://github.com/ljharb/call-bind-apply-helpers |
 | chai | 6.2.2 | MIT | https://github.com/chaijs/chai |
@@ -10186,7 +10186,7 @@ section above; this block focuses on the build-time runtime surface.
 | linkify-it | 5.0.2 | MIT | https://github.com/markdown-it/linkify-it |
 | log-symbols | 4.1.0 | MIT | https://github.com/sindresorhus/log-symbols |
 | magic-string | 0.30.21 | MIT | https://github.com/Rich-Harris/magic-string |
-| markdown-it | 14.2.0 | MIT | https://github.com/markdown-it/markdown-it |
+| markdown-it | 14.3.1 | MIT | https://github.com/markdown-it/markdown-it |
 | markdownlint-cli | 0.48.0 | MIT | https://github.com/igorshubovych/markdownlint-cli |
 | markdownlint | 0.40.0 | MIT | https://github.com/DavidAnson/markdownlint |
 | math-intrinsics | 1.1.0 | MIT | https://github.com/es-shims/math-intrinsics |
