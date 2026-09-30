@@ -2922,7 +2922,7 @@ THE SOFTWARE.
 
 Used by:
 
-- `bitflags` 2.13.1
+- `bitflags` 2.13.2
 - `fraction` 0.15.4
 - `glob` 0.3.4
 - `log` 0.4.33
@@ -3924,7 +3924,7 @@ SOFTWARE.
 
 Used by:
 
-- `indexmap` 2.14.1
+- `indexmap` 2.14.2
 
 <details>
 <summary>Licence text</summary>
@@ -4427,7 +4427,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- `tokio-rustls` 0.26.4
+- `tokio-rustls` 0.26.5
 
 <details>
 <summary>Licence text</summary>
@@ -6139,9 +6139,9 @@ Used by:
 - `anstyle-query` 1.1.5
 - `anstyle-wincon` 3.0.11
 - `anstyle` 1.0.14
-- `clap` 4.6.6
-- `clap_builder` 4.6.6
-- `clap_derive` 4.6.4
+- `clap` 4.6.7
+- `clap_builder` 4.6.7
+- `clap_derive` 4.6.7
 - `clap_lex` 1.1.0
 - `colorchoice` 1.0.5
 - `is_terminal_polyfill` 1.70.2
@@ -7470,7 +7470,7 @@ SOFTWARE.
 
 Used by:
 
-- `animate-core` 0.7.0
+- `animate-core` 0.8.0
 - `axoupdater` 0.10.2
 - `backtrace-ext` 0.2.1
 - `block2` 0.6.2
@@ -7798,7 +7798,7 @@ Used by:
 - `quote` 1.0.47
 - `ref-cast-impl` 1.0.26
 - `ref-cast` 1.0.26
-- `rustix` 1.1.4
+- `rustix` 1.1.5
 - `rustversion` 1.0.23
 - `semver` 1.0.28
 - `serde` 1.0.229
@@ -7809,7 +7809,7 @@ Used by:
 - `serde_path_to_error` 0.1.20
 - `serde_yaml` 0.9.34+deprecated
 - `syn` 2.0.119
-- `syn` 3.0.5
+- `syn` 3.0.6
 - `thiserror-impl` 2.0.20
 - `thiserror` 2.0.20
 - `unicode-ident` 1.0.24
@@ -9636,7 +9636,7 @@ the following restrictions:
 | `mio` | 1.2.3 | MIT License | https://github.com/tokio-rs/mio |
 | `errno` | 0.3.14 | MIT License | https://github.com/lambda-fairy/rust-errno |
 | `mime` | 0.3.17 | MIT License | https://github.com/hyperium/mime |
-| `bitflags` | 2.13.1 | MIT License | https://github.com/bitflags/bitflags |
+| `bitflags` | 2.13.2 | MIT License | https://github.com/bitflags/bitflags |
 | `fraction` | 0.15.4 | MIT License | https://github.com/dnsl48/fraction.git |
 | `glob` | 0.3.4 | MIT License | https://github.com/rust-lang/glob |
 | `log` | 0.4.33 | MIT License | https://github.com/rust-lang/log |
@@ -9700,7 +9700,7 @@ the following restrictions:
 | `parking_lot_core` | 0.9.12 | MIT License | https://github.com/Amanieu/parking_lot |
 | `thread_local` | 1.1.10 | MIT License | https://github.com/Amanieu/thread_local-rs |
 | `fallible-streaming-iterator` | 0.1.9 | MIT License | https://github.com/sfackler/fallible-streaming-iterator |
-| `indexmap` | 2.14.1 | MIT License | https://github.com/indexmap-rs/indexmap |
+| `indexmap` | 2.14.2 | MIT License | https://github.com/indexmap-rs/indexmap |
 | `equivalent` | 1.0.2 | MIT License | https://github.com/indexmap-rs/equivalent |
 | `addr2line` | 0.25.1 | MIT License | https://github.com/gimli-rs/addr2line |
 | `scopeguard` | 1.2.0 | MIT License | https://github.com/bluss/scopeguard |
@@ -9713,7 +9713,7 @@ the following restrictions:
 | `bytecount` | 0.6.9 | MIT License | https://github.com/llogiq/bytecount |
 | `h2` | 0.4.16 | MIT License | https://github.com/hyperium/h2 |
 | `http` | 1.5.0 | MIT License | https://github.com/hyperium/http |
-| `tokio-rustls` | 0.26.4 | MIT License | https://github.com/rustls/tokio-rustls |
+| `tokio-rustls` | 0.26.5 | MIT License | https://github.com/rustls/tokio-rustls |
 | `signal-hook-mio` | 0.2.5 | MIT License | https://github.com/vorner/signal-hook |
 | `signal-hook-registry` | 1.4.8 | MIT License | https://github.com/vorner/signal-hook |
 | `signal-hook` | 0.3.18 | MIT License | https://github.com/vorner/signal-hook |
@@ -9776,9 +9776,9 @@ the following restrictions:
 | `anstyle-query` | 1.1.5 | MIT License | https://github.com/rust-cli/anstyle.git |
 | `anstyle-wincon` | 3.0.11 | MIT License | https://github.com/rust-cli/anstyle.git |
 | `anstyle` | 1.0.14 | MIT License | https://github.com/rust-cli/anstyle.git |
-| `clap` | 4.6.6 | MIT License | https://github.com/clap-rs/clap |
-| `clap_builder` | 4.6.6 | MIT License | https://github.com/clap-rs/clap |
-| `clap_derive` | 4.6.4 | MIT License | https://github.com/clap-rs/clap |
+| `clap` | 4.6.7 | MIT License | https://github.com/clap-rs/clap |
+| `clap_builder` | 4.6.7 | MIT License | https://github.com/clap-rs/clap |
+| `clap_derive` | 4.6.7 | MIT License | https://github.com/clap-rs/clap |
 | `clap_lex` | 1.1.0 | MIT License | https://github.com/clap-rs/clap |
 | `colorchoice` | 1.0.5 | MIT License | https://github.com/rust-cli/anstyle.git |
 | `is_terminal_polyfill` | 1.70.2 | MIT License | https://github.com/polyfill-rs/is_terminal_polyfill |
@@ -9835,7 +9835,7 @@ the following restrictions:
 | `rust-sugiyama` | 0.4.0 | MIT License | https://github.com/paddison/rust-sugiyama |
 | `convert_case` | 0.10.0 | MIT License | https://github.com/rutrum/convert-case |
 | `tree-sitter-dart` | 0.2.0 | MIT License | https://github.com/nielsenko/tree-sitter-dart |
-| `animate-core` | 0.7.0 | MIT License | https://github.com/vyfor/animate |
+| `animate-core` | 0.8.0 | MIT License | https://github.com/vyfor/animate |
 | `axoupdater` | 0.10.2 | MIT License | https://github.com/axodotdev/axoupdater |
 | `backtrace-ext` | 0.2.1 | MIT License | https://github.com/gankra/backtrace-ext |
 | `block2` | 0.6.2 | MIT License | https://github.com/madsmtm/objc2 |
@@ -9916,7 +9916,7 @@ the following restrictions:
 | `quote` | 1.0.47 | MIT License | https://github.com/dtolnay/quote |
 | `ref-cast-impl` | 1.0.26 | MIT License | https://github.com/dtolnay/ref-cast |
 | `ref-cast` | 1.0.26 | MIT License | https://github.com/dtolnay/ref-cast |
-| `rustix` | 1.1.4 | MIT License | https://github.com/bytecodealliance/rustix |
+| `rustix` | 1.1.5 | MIT License | https://github.com/bytecodealliance/rustix |
 | `rustversion` | 1.0.23 | MIT License | https://github.com/dtolnay/rustversion |
 | `semver` | 1.0.28 | MIT License | https://github.com/dtolnay/semver |
 | `serde` | 1.0.229 | MIT License | https://github.com/serde-rs/serde |
@@ -9927,7 +9927,7 @@ the following restrictions:
 | `serde_path_to_error` | 0.1.20 | MIT License | https://github.com/dtolnay/path-to-error |
 | `serde_yaml` | 0.9.34+deprecated | MIT License | https://github.com/dtolnay/serde-yaml |
 | `syn` | 2.0.119 | MIT License | https://github.com/dtolnay/syn |
-| `syn` | 3.0.5 | MIT License | https://github.com/dtolnay/syn |
+| `syn` | 3.0.6 | MIT License | https://github.com/dtolnay/syn |
 | `thiserror-impl` | 2.0.20 | MIT License | https://github.com/dtolnay/thiserror |
 | `thiserror` | 2.0.20 | MIT License | https://github.com/dtolnay/thiserror |
 | `unicode-ident` | 1.0.24 | MIT License | https://github.com/dtolnay/unicode-ident |
