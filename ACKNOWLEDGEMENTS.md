@@ -3737,7 +3737,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- `hyper-rustls` 0.27.9
+- `hyper-rustls` 0.27.10
 - `rustls-native-certs` 0.8.4
 - `rustls` 0.23.45
 
@@ -4631,7 +4631,7 @@ DEALINGS IN THE SOFTWARE.
 
 Used by:
 
-- `smallvec` 1.16.1
+- `smallvec` 1.16.2
 
 <details>
 <summary>Licence text</summary>
@@ -6377,7 +6377,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 Used by:
 
-- `rand` 0.10.2
+- `rand` 0.10.3
 
 <details>
 <summary>Licence text</summary>
@@ -7220,7 +7220,7 @@ SOFTWARE.
 
 Used by:
 
-- `demand` 2.1.0
+- `demand` 2.3.0
 
 <details>
 <summary>Licence text</summary>
@@ -7490,7 +7490,7 @@ Used by:
 - `tree-sitter-kotlin-ng` 1.1.0
 - `tree-sitter-typescript` 0.23.2
 - `tree-sitter-zig` 1.1.2
-- `tui-big-text` 0.8.8
+- `tui-big-text` 0.8.10
 - `uuid-simd` 0.8.0
 - `verus_builtin` 0.0.0-2026-08-09-0044
 - `verus_builtin_macros` 0.0.0-2026-08-23-0033
@@ -7810,8 +7810,8 @@ Used by:
 - `serde_yaml` 0.9.34+deprecated
 - `syn` 2.0.119
 - `syn` 3.0.6
-- `thiserror-impl` 2.0.20
-- `thiserror` 2.0.20
+- `thiserror-impl` 2.0.21
+- `thiserror` 2.0.21
 - `unicode-ident` 1.0.24
 - `unsafe-libyaml` 0.2.11
 - `verus_prettyplease` 0.0.0-2026-08-09-0044
@@ -9690,7 +9690,7 @@ the following restrictions:
 | `hashbrown` | 0.17.1 | MIT License | https://github.com/rust-lang/hashbrown |
 | `serde_urlencoded` | 0.7.1 | MIT License | https://github.com/nox/serde_urlencoded |
 | `utf8parse` | 0.2.2 | MIT License | https://github.com/alacritty/vte |
-| `hyper-rustls` | 0.27.9 | MIT License | https://github.com/rustls/hyper-rustls |
+| `hyper-rustls` | 0.27.10 | MIT License | https://github.com/rustls/hyper-rustls |
 | `rustls-native-certs` | 0.8.4 | MIT License | https://github.com/rustls/rustls-native-certs |
 | `rustls` | 0.23.45 | MIT License | https://github.com/rustls/rustls |
 | `httpdate` | 1.0.3 | MIT License | https://github.com/pyfisch/httpdate |
@@ -9721,7 +9721,7 @@ the following restrictions:
 | `digest` | 0.11.3 | MIT License | https://github.com/RustCrypto/traits |
 | `bytes` | 1.12.1 | MIT License | https://github.com/tokio-rs/bytes |
 | `hash32` | 0.2.1 | MIT License | https://github.com/japaric/hash32 |
-| `smallvec` | 1.16.1 | MIT License | https://github.com/servo/rust-smallvec |
+| `smallvec` | 1.16.2 | MIT License | https://github.com/servo/rust-smallvec |
 | `ahash` | 0.8.12 | MIT License | https://github.com/tkaitchuck/ahash |
 | `want` | 0.3.1 | MIT License | https://github.com/seanmonstar/want |
 | `dirs-sys` | 0.5.0 | MIT License | https://github.com/dirs-dev/dirs-sys-rs |
@@ -9795,7 +9795,7 @@ the following restrictions:
 | `idna_adapter` | 1.2.2 | MIT License | https://github.com/hsivonen/idna_adapter |
 | `synstructure` | 0.13.2 | MIT License | https://github.com/mystor/synstructure |
 | `ipnet` | 2.12.1 | MIT License | https://github.com/krisprice/ipnet |
-| `rand` | 0.10.2 | MIT License | https://github.com/rust-random/rand |
+| `rand` | 0.10.3 | MIT License | https://github.com/rust-random/rand |
 | `zerocopy-derive` | 0.8.57 | MIT License | https://github.com/google/zerocopy |
 | `zerocopy` | 0.8.57 | MIT License | https://github.com/google/zerocopy |
 | `utf8_iter` | 1.0.4 | MIT License | https://github.com/hsivonen/utf8_iter |
@@ -9828,7 +9828,7 @@ the following restrictions:
 | `rustls-platform-verifier` | 0.7.0 | MIT License | https://github.com/rustls/rustls-platform-verifier |
 | `matchit` | 0.8.4 | MIT License | https://github.com/ibraheemdev/matchit |
 | `outref` | 0.5.2 | MIT License | https://github.com/Nugine/outref |
-| `demand` | 2.1.0 | MIT License | https://github.com/jdx/demand |
+| `demand` | 2.3.0 | MIT License | https://github.com/jdx/demand |
 | `homedir` | 0.3.6 | MIT License | https://github.com/ljtpetersen/homedir |
 | `line-clipping` | 0.3.8 | MIT License | https://github.com/ratatui/line-clipping |
 | `fluent-uri` | 0.4.1 | MIT License | https://github.com/yescallop/fluent-uri-rs |
@@ -9855,7 +9855,7 @@ the following restrictions:
 | `tree-sitter-kotlin-ng` | 1.1.0 | MIT License | https://github.com/tree-sitter-grammars/tree-sitter-kotlin |
 | `tree-sitter-typescript` | 0.23.2 | MIT License | https://github.com/tree-sitter/tree-sitter-typescript |
 | `tree-sitter-zig` | 1.1.2 | MIT License | https://github.com/tree-sitter-grammars/tree-sitter-zig |
-| `tui-big-text` | 0.8.8 | MIT License | https://github.com/ratatui/tui-widgets |
+| `tui-big-text` | 0.8.10 | MIT License | https://github.com/ratatui/tui-widgets |
 | `uuid-simd` | 0.8.0 | MIT License | https://github.com/Nugine/simd |
 | `verus_builtin` | 0.0.0-2026-08-09-0044 | MIT License | https://github.com/verus-lang/verus |
 | `verus_builtin_macros` | 0.0.0-2026-08-23-0033 | MIT License | https://github.com/verus-lang/verus |
@@ -9928,8 +9928,8 @@ the following restrictions:
 | `serde_yaml` | 0.9.34+deprecated | MIT License | https://github.com/dtolnay/serde-yaml |
 | `syn` | 2.0.119 | MIT License | https://github.com/dtolnay/syn |
 | `syn` | 3.0.6 | MIT License | https://github.com/dtolnay/syn |
-| `thiserror-impl` | 2.0.20 | MIT License | https://github.com/dtolnay/thiserror |
-| `thiserror` | 2.0.20 | MIT License | https://github.com/dtolnay/thiserror |
+| `thiserror-impl` | 2.0.21 | MIT License | https://github.com/dtolnay/thiserror |
+| `thiserror` | 2.0.21 | MIT License | https://github.com/dtolnay/thiserror |
 | `unicode-ident` | 1.0.24 | MIT License | https://github.com/dtolnay/unicode-ident |
 | `unsafe-libyaml` | 0.2.11 | MIT License | https://github.com/dtolnay/unsafe-libyaml |
 | `verus_prettyplease` | 0.0.0-2026-08-09-0044 | MIT License | https://github.com/dtolnay/prettyplease |
