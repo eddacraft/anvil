@@ -10033,11 +10033,9 @@ section above; this block focuses on the build-time runtime surface.
 | @jest/diff-sequences | 30.0.1 | MIT | https://github.com/jestjs/jest |
 | @jridgewell/sourcemap-codec | 1.6.0 | MIT | https://github.com/jridgewell/sourcemaps |
 | @napi-rs/wasm-runtime | 0.2.4 | MIT | https://github.com/napi-rs/napi-rs |
-| @nx/nx-linux-x64-gnu | 22.7.9 | MIT | https://github.com/nrwl/nx |
-| @nx/nx-linux-x64-musl | 22.7.9 | MIT | https://github.com/nrwl/nx |
+| @nx/nx-linux-x64-gnu | 22.7.10 | MIT | https://github.com/nrwl/nx |
 | @oxc-project/types | 0.148.0 | MIT | https://github.com/oxc-project/oxc |
-| @oxfmt/binding-linux-x64-gnu | 0.53.0 | MIT | https://github.com/oxc-project/oxc |
-| @oxfmt/binding-linux-x64-musl | 0.53.0 | MIT | https://github.com/oxc-project/oxc |
+| @oxfmt/binding-linux-x64-gnu | 0.72.0 | MIT | https://github.com/oxc-project/oxc |
 | @oxlint/binding-linux-x64-gnu | 1.68.0 | MIT | https://github.com/oxc-project/oxc |
 | @oxlint/binding-linux-x64-musl | 1.68.0 | MIT | https://github.com/oxc-project/oxc |
 | @playwright/test | 1.60.0 | Apache-2.0 | https://github.com/microsoft/playwright |
@@ -10229,7 +10227,7 @@ section above; this block focuses on the build-time runtime surface.
 | normalize-package-data | 2.5.0 | BSD-2-Clause | https://github.com/npm/normalize-package-data |
 | npm-normalize-package-bin | 1.0.1 | ISC | https://github.com/npm/npm-normalize-package-bin |
 | npm-run-path | 4.0.1 | MIT | https://github.com/sindresorhus/npm-run-path |
-| nx | 22.7.9 | MIT | https://github.com/nrwl/nx |
+| nx | 22.7.10 | MIT | https://github.com/nrwl/nx |
 | obug | 2.1.1 | MIT | https://github.com/sxzz/obug |
 | once | 1.4.0 | ISC | https://github.com/isaacs/once |
 | onetime | 5.1.2 | MIT | https://github.com/sindresorhus/onetime |
@@ -10238,7 +10236,7 @@ section above; this block focuses on the build-time runtime surface.
 | os-homedir | 1.0.2 | MIT | https://github.com/sindresorhus/os-homedir |
 | os-tmpdir | 1.0.2 | MIT | https://github.com/sindresorhus/os-tmpdir |
 | osenv | 0.1.5 | ISC | https://github.com/npm/osenv |
-| oxfmt | 0.53.0 | MIT | https://github.com/oxc-project/oxc |
+| oxfmt | 0.72.0 | MIT | https://github.com/oxc-project/oxc |
 | oxlint | 1.68.0 | MIT | https://github.com/oxc-project/oxc |
 | parse-entities | 4.0.2 | MIT | https://github.com/wooorm/parse-entities |
 | path-is-absolute | 1.0.1 | MIT | https://github.com/sindresorhus/path-is-absolute |
@@ -10268,8 +10266,8 @@ section above; this block focuses on the build-time runtime surface.
 | siginfo | 2.0.0 | ISC | https://github.com/emilbayes/siginfo |
 | signal-exit | 3.0.7 | ISC | https://github.com/tapjs/signal-exit |
 | slide | 1.1.6 | ISC | https://github.com/isaacs/slide-flow-control |
-| smol-toml | 1.7.2 | BSD-3-Clause | https://github.com/squirrelchat/smol-toml |
-| source-map-js | 1.2.1 | BSD-3-Clause | https://github.com/7rulnik/source-map-js |
+| smol-toml | 1.9.0 | BSD-3-Clause | https://github.com/squirrelchat/smol-toml |
+| source-map-js | 1.2.2 | BSD-3-Clause | https://github.com/7rulnik/source-map-js |
 | spdx-compare | 1.0.0 | MIT | https://github.com/kemitchell/spdx-compare.js |
 | spdx-correct | 3.2.0 | Apache-2.0 | https://github.com/jslicense/spdx-correct.js |
 | spdx-exceptions | 2.5.0 | CC-BY-3.0 | https://github.com/kemitchell/spdx-exceptions.json |
@@ -10293,7 +10291,7 @@ section above; this block focuses on the build-time runtime surface.
 | tinybench | 2.9.0 | MIT | https://github.com/tinylibs/tinybench |
 | tinyexec | 1.2.2 | MIT | https://github.com/tinylibs/tinyexec |
 | tinyglobby | 0.2.17 | MIT | https://github.com/SuperchupuDev/tinyglobby |
-| tinypool | 2.1.0 | MIT | https://github.com/tinylibs/tinypool |
+| tinypool | 2.2.0 | MIT | https://github.com/tinylibs/tinypool |
 | tinyrainbow | 3.1.1 | MIT | https://github.com/tinylibs/tinyrainbow |
 | tmp | 0.2.7 | MIT | https://github.com/raszi/node-tmp |
 | tree-kill | 1.2.2 | MIT | https://github.com/pkrumins/node-tree-kill |
